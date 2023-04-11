@@ -3,8 +3,8 @@
   "name" : "Hl7NorgeNoBasisAppointment",
   "package-id" : "my.id",
   "ig-ver" : "0.1.0",
-  "date" : "Tue, 11 Apr, 2023 01:49:52 +0200",
-  "exception" : "Illegal char <:> at index 89: C:\\Users\\arman\\no-basis-appointment2\\no-basis-appointment\\no-basis-appointment\\output\\urn:oid:2.16.578.1.12.4.1.1.8445",
+  "date" : "Tue, 11 Apr, 2023 09:32:34 +0200",
+  "exception" : "Illegal char <:> at index 70: C:\\Users\\arman\\OneDrive\\Documents\\GitHub\\NoBasisAppointment\\output\\urn:oid:2.16.578.1.12.4.1.1.8445",
   "version" : "4.3.0",
   "tool" : "5.0.0 (3)"
 }
