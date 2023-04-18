@@ -21,11 +21,27 @@
     "name" : "NoBasisVirtualService"
   },
   {
+    "id" : "appointment-cancellation-reason",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/appointment-cancellation-reason",
+    "version" : "0.1.0",
+    "name" : "AppointmentCancellationReason",
+    "oids" : ["2.16.840.1.113883.4.642.3.1381"]
+  },
+  {
     "id" : "no-basis-virtual-service-type-vs",
     "type" : "ValueSet",
     "url" : "http://example.org/ValueSet/no-basis-virtual-service-type-vs",
     "version" : "0.1.0",
     "name" : "NoBasisVirtualServiceTypeVS"
+  },
+  {
+    "id" : "appointment-cancellation-reason",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.hl7.org/CodeSystem/appointment-cancellation-reason",
+    "version" : "0.1.0",
+    "name" : "AppointmentCancellationReason",
+    "oids" : ["2.16.840.1.113883.4.642.4.1382"]
   },
   {
     "id" : "no-basis-group",

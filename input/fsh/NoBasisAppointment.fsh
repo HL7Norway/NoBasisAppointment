@@ -18,9 +18,7 @@ Description: "Base profile for Norwegian Appointment information. Defined by HL7
     $no-basis-group named group 0..* and
     $no-basis-partof named partOf 0..1 and
     $no-basis-postponementreason named postponementReason 0..1
-* cancelationReason ^code.system = "urn:oid:2.16.578.1.12.4.1.1.8445"
-* cancelationReason ^code.display = "Volven kodeverk 8445 - Ventetid sluttkode"
-* cancelationReason.coding from urn:oid:2.16.578.1.12.4.1.1.8445 (preferred)
+* cancelationReason.coding from appointment-cancellation-reason (example)
 * appointmentType.coding ^slicing.discriminator.type = #value
 * appointmentType.coding ^slicing.discriminator.path = "$this"
 * appointmentType.coding ^slicing.rules = #closed
