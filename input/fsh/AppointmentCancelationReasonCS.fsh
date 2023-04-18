@@ -1,3 +1,4 @@
+
 CodeSystem: AppointmentCancellationReason
 Id: appointment-cancellation-reason
 Title: "Appointment cancellation reason"
