@@ -237,10 +237,6 @@
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>.id</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>.statusCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;cancelationReason</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>union(., ./translation)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>./originalText[mediaType/code=&quot;text/plain&quot;]/data</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;serviceCategory</td><td>n/a, might be inferred from the ServiceDeliveryLocation</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;serviceType</td><td>n/a, might be inferred from the ServiceDeliveryLocation</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;specialty</td><td>.performer.AssignedPerson.code</td> </tr>
@@ -316,9 +312,6 @@
  <tr><td>Appointment</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>SCH-1, SCH-2, ARQ-1, ARQ-2</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>SCH-25</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;cancelationReason</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>C*E.1-8, C*E.10-22</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>C*E.9. But note many systems use C*E.2 for this</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;appointmentType</td><td>ARQ-7</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>C*E.1-8, C*E.10-22</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding (omsorgsNiva)</td><td>C*E.1-8, C*E.10-22</td> </tr>
@@ -391,7 +384,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023 <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package my.id#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 4.3.0</a>. Generated <span title="Wed, Apr 19, 2023 23:41+0200">2023-04-19</span>
+          IG &#169; 2023 <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package my.id#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 4.3.0</a>. Generated <span title="Wed, Apr 19, 2023 23:48+0200">2023-04-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

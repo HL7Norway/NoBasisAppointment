@@ -18,7 +18,7 @@ Description: "Base profile for Norwegian Appointment information. Defined by HL7
     $no-basis-group named group 0..* and
     $no-basis-partof named partOf 0..1 and
     $no-basis-postponementreason named postponementReason 0..1
-* cancelationReason.coding from appointment-cancellation-reason (example)
+// * cancelationReason.coding from appointment-cancellation-reason (example)
 * appointmentType.coding ^slicing.discriminator.type = #value
 * appointmentType.coding ^slicing.discriminator.path = "$this"
 * appointmentType.coding ^slicing.rules = #closed
