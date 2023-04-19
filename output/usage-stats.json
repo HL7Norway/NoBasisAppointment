@@ -122,18 +122,6 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
-      "CodeSystem",
-      "ValueSet"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
-      "CodeSystem",
-      "ValueSet"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg": [
-      "CodeSystem",
-      "ValueSet"
-    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
     ],

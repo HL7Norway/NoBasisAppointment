@@ -10,7 +10,7 @@
   "name" : "Hl7NorgeNoBasisAppointment",
   "title" : "Proposal for No Basis Appointment",
   "status" : "draft",
-  "date" : "2023-04-18T14:05:08+02:00",
+  "date" : "2023-04-19T23:41:28+02:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -627,34 +627,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/appointment-cancellation-reason"
-      },
-      "name" : "Appointment cancellation reason",
-      "description" : "This example value set defines a set of reasons for the cancellation of an appointment.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
         "reference" : "ValueSet/no-basis-virtual-service-type-vs"
       },
       "name" : "No Basis VirtualServiceType Value Set",
       "description" : "Example codes for possible virtual service connection types.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/appointment-cancellation-reason"
-      },
-      "name" : "Appointment cancellation reason",
-      "description" : "This example value set defines a set of reasons for the cancellation of an appointment.",
       "exampleBoolean" : false
     },
     {

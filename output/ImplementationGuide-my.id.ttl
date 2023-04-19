@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Hl7NorgeNoBasisAppointment"] ; # 
   fhir:title [ fhir:v "Proposal for No Basis Appointment"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-04-18T14:05:08+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-04-19T23:41:28+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;
@@ -542,35 +542,11 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/ValueSet/appointment-cancellation-reason> ;
-         fhir:reference [ fhir:v "ValueSet/appointment-cancellation-reason" ]
-       ] ;
-       fhir:name [ fhir:v "Appointment cancellation reason" ] ;
-       fhir:description [ fhir:v "This example value set defines a set of reasons for the cancellation of an appointment." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <http://example.org/ValueSet/no-basis-virtual-service-type-vs> ;
          fhir:reference [ fhir:v "ValueSet/no-basis-virtual-service-type-vs" ]
        ] ;
        fhir:name [ fhir:v "No Basis VirtualServiceType Value Set" ] ;
        fhir:description [ fhir:v "Example codes for possible virtual service connection types." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://example.org/CodeSystem/appointment-cancellation-reason> ;
-         fhir:reference [ fhir:v "CodeSystem/appointment-cancellation-reason" ]
-       ] ;
-       fhir:name [ fhir:v "Appointment cancellation reason" ] ;
-       fhir:description [ fhir:v "This example value set defines a set of reasons for the cancellation of an appointment." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
