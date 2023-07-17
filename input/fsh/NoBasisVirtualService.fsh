@@ -12,13 +12,13 @@ Description: "The VirtualService is based on VirtualServiceDetail structure from
     channelType 0..1 and
     virtualAddress 0..1 and
     additionalInfo 0..* and
-    maxPartisipants 0..1 and
+    maxParticipants 0..1 and
     sessionKey 0..1 
 * extension[channelType].value[x] only Coding
 * extension[channelType].value[x] from no-basis-virtual-service-type-vs (example)
 * extension[virtualAddress].value[x] only string or url or ContactPoint
 * extension[additionalInfo].value[x] only url
-* extension[maxPartisipants].value[x] only positiveInt
+* extension[maxParticipants].value[x] only positiveInt
 * extension[sessionKey].value[x] only string
 // Definitions of in-line extensions
 * insert DocumentExtension (
@@ -34,7 +34,7 @@ Description: "The VirtualService is based on VirtualServiceDetail structure from
     "Address to see alternative connection details",
     "Address to see alternative connection details. ")
 * insert DocumentExtension (
-    maxPartisipants,
+    maxParticipants,
     "Maximum number of participants supported by the virtual service.",
     "Maximum number of participants supported by the virtual service. ")
 * insert DocumentExtension (
