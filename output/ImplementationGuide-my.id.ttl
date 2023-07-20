@@ -10,14 +10,14 @@
   fhir:id [ fhir:v "my.id"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Hl7NorgeNoBasisAppointment</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/my.id</pre><div><p>Proposal for new no basis profiles for appointment and appointmentResponse based on result from workshop.</p>\n</div></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Hl7NorgeNoBasisAppointmentNoBasisAppointmentResponse</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/my.id</pre><div><p>Proposal for new no basis profiles for appointment and appointmentResponse based on result from workshop.</p>\n</div></div>"
   ] ; # 
   fhir:url [ fhir:v "http://example.org/ImplementationGuide/my.id"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.2.0"] ; # 
-  fhir:name [ fhir:v "Hl7NorgeNoBasisAppointment"] ; # 
+  fhir:name [ fhir:v "Hl7NorgeNoBasisAppointmentNoBasisAppointmentResponse"] ; # 
   fhir:title [ fhir:v "Proposal for No Basis Appointment and NO Basis AppointmentResponse"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-07-20T11:38:03+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-07-20T13:16:53+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;

@@ -1,9 +1,9 @@
 {
   "url" : "http://example.org/ImplementationGuide/my.id",
-  "name" : "Hl7NorgeNoBasisAppointment",
+  "name" : "Hl7NorgeNoBasisAppointmentNoBasisAppointmentResponse",
   "package-id" : "my.id",
   "ig-ver" : "0.2.0",
-  "date" : "Thu, 20 Jul, 2023 11:38:03 +0200",
+  "date" : "Thu, 20 Jul, 2023 13:16:53 +0200",
   "errs" : 0,
   "warnings" : 22,
   "hints" : 3,

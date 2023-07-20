@@ -3,14 +3,14 @@
   "id" : "my.id",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Hl7NorgeNoBasisAppointment</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/my.id</pre><div><p>Proposal for new no basis profiles for appointment and appointmentResponse based on result from workshop.</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Hl7NorgeNoBasisAppointmentNoBasisAppointmentResponse</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/my.id</pre><div><p>Proposal for new no basis profiles for appointment and appointmentResponse based on result from workshop.</p>\n</div></div>"
   },
   "url" : "http://example.org/ImplementationGuide/my.id",
   "version" : "0.2.0",
-  "name" : "Hl7NorgeNoBasisAppointment",
+  "name" : "Hl7NorgeNoBasisAppointmentNoBasisAppointmentResponse",
   "title" : "Proposal for No Basis Appointment and NO Basis AppointmentResponse",
   "status" : "draft",
-  "date" : "2023-07-20T11:38:03+02:00",
+  "date" : "2023-07-20T13:16:53+02:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",

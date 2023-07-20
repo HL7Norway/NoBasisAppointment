@@ -1,12 +1,12 @@
 Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-\fsh-generated\resources\ImplementationGuide-my.id.json	5316	-	0	0	0	0	0	0	5	119	0	0	0	0	0	0	0	0	0	0	274	130	0	0	0	4	0	0
-fsh-generated/resources/Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a.json	947	14	0	0	0	0	0	0	0	89	0	0	0	0	0	0	0	0	0	0	40	39	0	0	0	0	0	0
-fsh-generated/resources/AppointmentResponse-PatientAppointmentResponseExample.json	654	13	1	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	32	30	0	0	0	0	0	0
-fsh-generated/resources/Patient-e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473.json	209	8	0	0	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	16	26	0	0	0	0	0	0
-fsh-generated/resources/StructureDefinition-no-basis-Appointment.json	5059	22	0	0	0	0	0	308	0	276	0	0	1	0	0	1	0	1	0	0	890	2326	0	0	0	16	0	1
-fsh-generated/resources/StructureDefinition-no-basis-AppointmentResponse.json	3037	15	0	0	0	0	0	101	0	94	0	0	0	0	0	0	0	1	0	0	426	729	0	0	0	15	0	0
-fsh-generated/resources/StructureDefinition-no-basis-group.json	1432	13	0	0	0	0	0	36	0	25	0	0	0	0	0	0	0	0	0	0	183	303	0	0	0	3	0	0
-fsh-generated/resources/StructureDefinition-no-basis-partof.json	2228	12	0	0	0	0	0	53	0	28	0	0	0	0	0	0	0	0	0	0	180	293	0	0	0	2	0	0
-fsh-generated/resources/StructureDefinition-no-basis-shortnotice.json	1674	12	1	0	0	0	0	38	0	23	0	0	0	0	0	0	0	0	0	0	174	291	0	0	0	3	0	0
-fsh-generated/resources/StructureDefinition-no-basis-virtual-service.json	6058	31	0	0	0	0	0	126	0	106	0	0	0	0	0	0	0	0	0	0	692	729	0	0	0	7	0	1
-fsh-generated/resources/ValueSet-no-basis-virtual-service-type-vs.json	563	8	0	0	0	0	0	0	0	73	0	0	0	0	0	0	0	0	0	0	19	9488	0	0	0	1	0	0
+\fsh-generated\resources\ImplementationGuide-my.id.json	5342	-	0	0	0	0	0	0	3	112	0	0	0	0	0	0	0	0	0	0	241	127	0	0	0	8	0	1
+fsh-generated/resources/Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a.json	947	13	0	0	0	1	0	0	0	89	0	0	0	0	0	0	0	0	0	0	35	41	0	0	0	0	0	0
+fsh-generated/resources/AppointmentResponse-PatientAppointmentResponseExample.json	654	12	1	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	26	28	0	0	0	0	0	0
+fsh-generated/resources/Patient-e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473.json	209	8	0	0	0	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	15	24	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-no-basis-Appointment.json	5059	21	0	0	1	0	0	326	1	268	0	0	0	0	0	0	0	2	0	0	839	2747	0	0	0	13	0	1
+fsh-generated/resources/StructureDefinition-no-basis-AppointmentResponse.json	3037	16	0	0	0	0	0	107	0	80	0	0	1	0	0	0	0	1	0	0	374	660	0	0	1	5	0	0
+fsh-generated/resources/StructureDefinition-no-basis-group.json	1432	13	0	0	0	0	0	56	0	33	0	0	0	0	0	0	0	0	0	0	175	339	0	0	0	3	0	0
+fsh-generated/resources/StructureDefinition-no-basis-partof.json	2228	12	0	0	0	0	0	33	0	25	0	0	0	0	0	0	0	0	0	0	207	347	0	1	0	1	0	0
+fsh-generated/resources/StructureDefinition-no-basis-shortnotice.json	1674	13	0	0	0	0	0	27	0	27	0	0	0	0	0	0	0	1	0	0	182	289	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-no-basis-virtual-service.json	6058	25	0	1	0	0	0	132	0	102	0	0	0	0	0	0	0	1	0	0	743	745	0	0	0	9	0	0
+fsh-generated/resources/ValueSet-no-basis-virtual-service-type-vs.json	563	9	0	0	0	0	0	0	0	93	0	0	0	0	0	0	0	0	0	0	21	9547	0	0	0	1	0	0
