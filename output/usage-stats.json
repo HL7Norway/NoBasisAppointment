@@ -1,10 +1,31 @@
 {
   "package": "my.id",
-  "version": "0.1.0",
-  "fhirVersion": "4.3.0",
+  "version": "0.2.0",
+  "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "http://example.org/StructureDefinition/no-basis-appointment/no-basis-virtualservice",
+      "url": "http://example.org/StructureDefinition/no-basis-group",
+      "title": "no-basis-group",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/no-basis-partof",
+      "title": "no-basis-partof",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/no-basis-shortnotice",
+      "title": "no-basis-shortnotice",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/no-basis-virtual-service",
       "title": "no-basis-Virtual-Service",
       "types": [
         "Coding",
@@ -38,7 +59,6 @@
         "Annotation",
         "Attachment",
         "CodeableConcept",
-        "CodeableReference",
         "Coding",
         "ContactPoint",
         "Count",
@@ -51,7 +71,6 @@
         "Quantity",
         "Range",
         "Ratio",
-        "RatioRange",
         "Reference",
         "SampledData",
         "Signature",
@@ -64,41 +83,36 @@
         "RelatedArtifact",
         "TriggerDefinition",
         "UsageContext",
-        "Dosage"
-      ]
-    },
-    {
-      "url": "https://hl7.no/fhir/structuredefinition/no-basis-appointment/no-basis-group",
-      "title": "no-basis-group",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "https://hl7.no/fhir/structuredefinition/no-basis-appointment/no-basis-partof",
-      "title": "no-basis-partof",
-      "types": [
-        "Reference"
-      ]
-    },
-    {
-      "url": "https://hl7.no/fhir/structuredefinition/no-basis-appointment/no-basis-postponementreason",
-      "title": "no-basis-postponementreason",
-      "types": [
-        "code"
+        "Dosage",
+        "Meta"
       ]
     }
   ],
   "profiles": {
     "Appointment": [
       {
-        "url": "http://example.org/StructureDefinition/no-basis-Appointment-new",
+        "url": "http://example.org/StructureDefinition/no-basis-Appointment",
         "title": "no-basis-Appointment"
+      }
+    ],
+    "AppointmentResponse": [
+      {
+        "url": "http://example.org/StructureDefinition/no-basis-AppointmentResponse",
+        "title": "no-basis-AppointmentResponse"
       }
     ]
   },
   "usage": {
-    "http://example.org/StructureDefinition/no-basis-appointment/no-basis-virtualservice": [
+    "http://example.org/StructureDefinition/no-basis-group": [
+      "Appointment"
+    ],
+    "http://example.org/StructureDefinition/no-basis-partof": [
+      "Appointment"
+    ],
+    "http://example.org/StructureDefinition/no-basis-shortnotice": [
+      "AppointmentResponse"
+    ],
+    "http://example.org/StructureDefinition/no-basis-virtual-service": [
       "Appointment"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
@@ -122,6 +136,13 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
     ],
@@ -130,15 +151,6 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
-    ],
-    "https://hl7.no/fhir/structuredefinition/no-basis-appointment/no-basis-group": [
-      "Appointment"
-    ],
-    "https://hl7.no/fhir/structuredefinition/no-basis-appointment/no-basis-partof": [
-      "Appointment"
-    ],
-    "https://hl7.no/fhir/structuredefinition/no-basis-appointment/no-basis-postponementreason": [
-      "Appointment"
     ]
   }
 }

@@ -10,14 +10,14 @@
   fhir:id [ fhir:v "my.id"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Hl7NorgeNoBasisAppointment</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/my.id</pre></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Hl7NorgeNoBasisAppointment</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/my.id</pre><div><p>Proposal for new no basis profiles for appointment and appointmentResponse based on result from workshop.</p>\n</div></div>"
   ] ; # 
   fhir:url [ fhir:v "http://example.org/ImplementationGuide/my.id"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
   fhir:name [ fhir:v "Hl7NorgeNoBasisAppointment"] ; # 
-  fhir:title [ fhir:v "Proposal for No Basis Appointment"] ; # 
+  fhir:title [ fhir:v "Proposal for No Basis Appointment and NO Basis AppointmentResponse"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-04-27T14:52:10+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-07-20T11:38:03+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;
@@ -26,9 +26,10 @@
        fhir:value [ fhir:v "http://example.org/example-publisher" ]
      ] )
   ] ) ; # 
+  fhir:description [ fhir:v "Proposal for new no basis profiles for appointment and appointmentResponse based on result from workshop."] ; # 
   fhir:packageId [ fhir:v "my.id"] ; # 
   fhir:license [ fhir:v "CC0-1.0"] ; # 
-  fhir:fhirVersion ( [ fhir:v "4.3.0"] ) ; # 
+  fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
   fhir:dependsOn ( [
      fhir:id [ fhir:v "hl7tx" ] ;
      fhir:extension ( [
@@ -41,6 +42,18 @@
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
      fhir:version [ fhir:v "5.0.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
+     fhir:version [ fhir:v "1.0.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -259,6 +272,9 @@
          fhir:value [ fhir:v "true" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#current" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
@@ -479,14 +495,53 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Appointment" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a> ;
+         fhir:reference [ fhir:v "Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a" ]
+       ] ;
+       fhir:name [ fhir:v "AppointmentExample" ] ;
+       fhir:description [ fhir:v "Discussion on the results of your recent MRI" ] ;
+       fhir:example [
+         fhir:v "http://example.org/StructureDefinition/no-basis-Appointment"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/no-basis-Appointment>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/no-basis-virtual-service-type-vs> ;
+         fhir:reference [ fhir:v "ValueSet/no-basis-virtual-service-type-vs" ]
+       ] ;
+       fhir:name [ fhir:v "No Basis VirtualServiceType Value Set" ] ;
+       fhir:description [ fhir:v "Example codes for possible virtual service connection types." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/no-basis-Appointment-new> ;
-         fhir:reference [ fhir:v "StructureDefinition/no-basis-Appointment-new" ]
+         fhir:link <http://example.org/StructureDefinition/no-basis-Appointment> ;
+         fhir:reference [ fhir:v "StructureDefinition/no-basis-Appointment" ]
        ] ;
        fhir:name [ fhir:v "no-basis-Appointment" ] ;
-       fhir:description [ fhir:v "Base profile for Norwegian Appointment information. Defined by HL7 Norway. This profile identifies a set of minimum expectations for an Appointment resource when creating, searching and retrieving compositions by defining which coding system(s) must be present when using this profile. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case." ] ;
+       fhir:description [ fhir:v "Base profile for Norwegian Appointment information. Defined by HL7 Norway. This profile identifies a set of minimum expectations for an Appointment resource when creating, searching and retrieving compositions by defining which coding system(s) can be present when using this profile. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/no-basis-AppointmentResponse> ;
+         fhir:reference [ fhir:v "StructureDefinition/no-basis-AppointmentResponse" ]
+       ] ;
+       fhir:name [ fhir:v "no-basis-AppointmentResponse" ] ;
+       fhir:description [ fhir:v "Basisprofil for Norwegian AppointmentResponse information. Defined by HL7 Norway. Should be used as a basis for further profiling in use-cases where specific appointment respons information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to each use-case." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -518,11 +573,11 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/no-basis-postponementreason> ;
-         fhir:reference [ fhir:v "StructureDefinition/no-basis-postponementreason" ]
+         fhir:link <http://example.org/StructureDefinition/no-basis-shortnotice> ;
+         fhir:reference [ fhir:v "StructureDefinition/no-basis-shortnotice" ]
        ] ;
-       fhir:name [ fhir:v "no-basis-postponementreason" ] ;
-       fhir:description [ fhir:v "The reason code for the postponement." ] ;
+       fhir:name [ fhir:v "no-basis-shortnotice" ] ;
+       fhir:description [ fhir:v "The basis extension defines a boolean concept that expresses the possibility to meet on short notice if the there are available appointment slots." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -539,51 +594,43 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
+         fhir:value [ fhir:v "AppointmentResponse" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/ValueSet/no-basis-virtual-service-type-vs> ;
-         fhir:reference [ fhir:v "ValueSet/no-basis-virtual-service-type-vs" ]
+         fhir:link <http://example.org/AppointmentResponse/PatientAppointmentResponseExample> ;
+         fhir:reference [ fhir:v "AppointmentResponse/PatientAppointmentResponseExample" ]
        ] ;
-       fhir:name [ fhir:v "No Basis VirtualServiceType Value Set" ] ;
-       fhir:description [ fhir:v "Example codes for possible virtual service connection types." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Appointment" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://example.org/Appointment/NoBasisAppointmentExample1> ;
-         fhir:reference [ fhir:v "Appointment/NoBasisAppointmentExample1" ]
-       ] ;
-       fhir:name [ fhir:v "NoBasisAppointmentExample1" ] ;
-       fhir:description [ fhir:v "Discussion on the results of your recent MRI" ] ;
+       fhir:name [ fhir:v "PatientAppointmentResponseExample" ] ;
+       fhir:description [ fhir:v "Example of Patient response to an appointment using no-basis profile. The profile is identical to the basis profile axept there is a extension that can be used for patient to signal if the patient can come on short notice to an appointment. The example is similar to http://hl7.org/fhir/R4/appointmentresponse-example.json.html with adition for the extension." ] ;
        fhir:example [
-         fhir:v "http://example.org/StructureDefinition/no-basis-Appointment-new"^^xsd:anyURI ;
-         fhir:link <http://example.org/StructureDefinition/no-basis-Appointment-new>
+         fhir:v "http://example.org/StructureDefinition/no-basis-AppointmentResponse"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/no-basis-AppointmentResponse>
        ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Appointment" ]
+         fhir:value [ fhir:v "Patient" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/Appointment/NoBasisAppointmentExample2> ;
-         fhir:reference [ fhir:v "Appointment/NoBasisAppointmentExample2" ]
+         fhir:link <http://example.org/Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473> ;
+         fhir:reference [ fhir:v "Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473" ]
        ] ;
-       fhir:name [ fhir:v "NoBasisAppointmentExample2" ] ;
-       fhir:description [ fhir:v "Group session for psychiatric patients" ] ;
-       fhir:example [
-         fhir:v "http://example.org/StructureDefinition/no-basis-Appointment-new"^^xsd:anyURI ;
-         fhir:link <http://example.org/StructureDefinition/no-basis-Appointment-new>
-       ]
+       fhir:name [ fhir:v "PatientExample" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] ) ;
      fhir:page [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "toc.html"^^xsd:anyURI ]
+       ] ) ;
        fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
        fhir:title [ fhir:v "Table of Contents" ] ;
        fhir:generation [ fhir:v "html" ] ;
        fhir:page ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "index.html"^^xsd:anyURI ]
+         ] ) ;
          fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Home" ] ;
          fhir:generation [ fhir:v "markdown" ]

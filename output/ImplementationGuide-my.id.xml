@@ -3,14 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="my.id"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Hl7NorgeNoBasisAppointment</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/my.id</pre></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Hl7NorgeNoBasisAppointment</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/my.id</pre><div><p>Proposal for new no basis profiles for appointment and appointmentResponse based on result from workshop.</p>
+</div></div>
   </text>
   <url value="http://example.org/ImplementationGuide/my.id"/>
-  <version value="0.1.0"/>
+  <version value="0.2.0"/>
   <name value="Hl7NorgeNoBasisAppointment"/>
-  <title value="Proposal for No Basis Appointment"/>
+  <title value="Proposal for No Basis Appointment and NO Basis AppointmentResponse"/>
   <status value="draft"/>
-  <date value="2023-04-27T14:52:10+02:00"/>
+  <date value="2023-07-20T11:38:03+02:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -19,9 +20,10 @@
       <value value="http://example.org/example-publisher"/>
     </telecom>
   </contact>
+  <description value="Proposal for new no basis profiles for appointment and appointmentResponse based on result from workshop."/>
   <packageId value="my.id"/>
   <license value="CC0-1.0"/>
-  <fhirVersion value="4.3.0"/>
+  <fhirVersion value="4.0.1"/>
   <dependsOn id="hl7tx">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
       <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
@@ -29,6 +31,14 @@
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
     <version value="5.0.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="1.0.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -222,6 +232,9 @@
       <extension url="value">
         <valueString value="true"/>
       </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools#current"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -417,13 +430,46 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Appointment"/>
+      </extension>
+      <reference>
+        <reference value="Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a"/>
+      </reference>
+      <name value="AppointmentExample"/>
+      <description value="Discussion on the results of your recent MRI"/>
+      <exampleCanonical value="http://example.org/StructureDefinition/no-basis-Appointment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/no-basis-virtual-service-type-vs"/>
+      </reference>
+      <name value="No Basis VirtualServiceType Value Set"/>
+      <description value="Example codes for possible virtual service connection types."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/no-basis-Appointment-new"/>
+        <reference value="StructureDefinition/no-basis-Appointment"/>
       </reference>
       <name value="no-basis-Appointment"/>
-      <description value="Base profile for Norwegian Appointment information. Defined by HL7 Norway. This profile identifies a set of minimum expectations for an Appointment resource when creating, searching and retrieving compositions by defining which coding system(s) must be present when using this profile. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case."/>
+      <description value="Base profile for Norwegian Appointment information. Defined by HL7 Norway. This profile identifies a set of minimum expectations for an Appointment resource when creating, searching and retrieving compositions by defining which coding system(s) can be present when using this profile. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/no-basis-AppointmentResponse"/>
+      </reference>
+      <name value="no-basis-AppointmentResponse"/>
+      <description value="Basisprofil for Norwegian AppointmentResponse information. Defined by HL7 Norway. Should be used as a basis for further profiling in use-cases where specific appointment respons information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to each use-case."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -453,10 +499,10 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/no-basis-postponementreason"/>
+        <reference value="StructureDefinition/no-basis-shortnotice"/>
       </reference>
-      <name value="no-basis-postponementreason"/>
-      <description value="The reason code for the postponement."/>
+      <name value="no-basis-shortnotice"/>
+      <description value="The basis extension defines a boolean concept that expresses the possibility to meet on short notice if the there are available appointment slots."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -472,42 +518,36 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
+        <valueString value="AppointmentResponse"/>
       </extension>
       <reference>
-        <reference value="ValueSet/no-basis-virtual-service-type-vs"/>
+        <reference value="AppointmentResponse/PatientAppointmentResponseExample"/>
       </reference>
-      <name value="No Basis VirtualServiceType Value Set"/>
-      <description value="Example codes for possible virtual service connection types."/>
-      <exampleBoolean value="false"/>
+      <name value="PatientAppointmentResponseExample"/>
+      <description value="Example of Patient response to an appointment using no-basis profile. The profile is identical to the basis profile axept there is a extension that can be used for patient to signal if the patient can come on short notice to an appointment. The example is similar to http://hl7.org/fhir/R4/appointmentresponse-example.json.html with adition for the extension."/>
+      <exampleCanonical value="http://example.org/StructureDefinition/no-basis-AppointmentResponse"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Appointment"/>
+        <valueString value="Patient"/>
       </extension>
       <reference>
-        <reference value="Appointment/NoBasisAppointmentExample1"/>
+        <reference value="Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473"/>
       </reference>
-      <name value="NoBasisAppointmentExample1"/>
-      <description value="Discussion on the results of your recent MRI"/>
-      <exampleCanonical value="http://example.org/StructureDefinition/no-basis-Appointment-new"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Appointment"/>
-      </extension>
-      <reference>
-        <reference value="Appointment/NoBasisAppointmentExample2"/>
-      </reference>
-      <name value="NoBasisAppointmentExample2"/>
-      <description value="Group session for psychiatric patients"/>
-      <exampleCanonical value="http://example.org/StructureDefinition/no-basis-Appointment-new"/>
+      <name value="PatientExample"/>
+      <exampleBoolean value="true"/>
     </resource>
     <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
       <generation value="html"/>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
         <nameUrl value="index.html"/>
         <title value="Home"/>
         <generation value="markdown"/>

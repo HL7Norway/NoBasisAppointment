@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>MY.ID\Artifacts Summary - FHIR v4.3.0</title>
+    <title>MY.ID\Artifacts Summary - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -29,10 +29,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -47,9 +47,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Proposal for No Basis Appointment</span>
+          <p><span style="font-size:12pt;font-weight:bold">Proposal for No Basis Appointment and NO Basis AppointmentResponse</span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - draft
+            <span style="display:inline-block;">0.2.0 - draft
 
 
             </span>
@@ -71,7 +71,7 @@
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <!-- menu.xml  -->
 
@@ -114,7 +114,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Proposal for No Basis Appointment - Local Development build (v0.1.0). See the <a href="http://example.org/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Proposal for No Basis Appointment and NO Basis AppointmentResponse - Local Development build (v0.2.0). See the <a href="http://example.org/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -154,11 +154,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-no-basis-Appointment-new.html"
-                     title="StructureDefinition/no-basis-Appointment-new">no-basis-Appointment</a>
+                  <a href="StructureDefinition-no-basis-Appointment.html"
+                     title="StructureDefinition/no-basis-Appointment">no-basis-Appointment</a>
                </td>
                <td>
-<p>Base profile for Norwegian Appointment information. Defined by HL7 Norway. This profile identifies a set of minimum expectations for an Appointment resource when creating, searching and retrieving compositions by defining which coding system(s) must be present when using this profile. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.</p>
+<p>Base profile for Norwegian Appointment information. Defined by HL7 Norway. This profile identifies a set of minimum expectations for an Appointment resource when creating, searching and retrieving compositions by defining which coding system(s) can be present when using this profile. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-no-basis-AppointmentResponse.html"
+                     title="StructureDefinition/no-basis-AppointmentResponse">no-basis-AppointmentResponse</a>
+               </td>
+               <td>
+<p>Basisprofil for Norwegian AppointmentResponse information. Defined by HL7 Norway. Should be used as a basis for further profiling in use-cases where specific appointment respons information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to each use-case.</p>
 </td>
             </tr>
          </tbody>
@@ -193,11 +202,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-no-basis-postponementreason.html"
-                     title="StructureDefinition/no-basis-postponementreason">no-basis-postponementreason</a>
+                  <a href="StructureDefinition-no-basis-shortnotice.html"
+                     title="StructureDefinition/no-basis-shortnotice">no-basis-shortnotice</a>
                </td>
                <td>
-<p>The reason code for the postponement.</p>
+<p>The basis extension defines a boolean concept that expresses the possibility to meet on short notice if the there are available appointment slots.</p>
 </td>
             </tr>
             <tr>
@@ -244,8 +253,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="Appointment-NoBasisAppointmentExample1.html"
-                     title="Appointment/NoBasisAppointmentExample1">NoBasisAppointmentExample1</a>
+                  <a href="Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a.html"
+                     title="Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a">AppointmentExample</a>
                </td>
                <td>
 <p>Discussion on the results of your recent MRI</p>
@@ -253,11 +262,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Appointment-NoBasisAppointmentExample2.html"
-                     title="Appointment/NoBasisAppointmentExample2">NoBasisAppointmentExample2</a>
+                  <a href="AppointmentResponse-PatientAppointmentResponseExample.html"
+                     title="AppointmentResponse/PatientAppointmentResponseExample">PatientAppointmentResponseExample</a>
                </td>
                <td>
-<p>Group session for psychiatric patients</p>
+<p>Example of Patient response to an appointment using no-basis profile. The profile is identical to the basis profile axept there is a extension that can be used for patient to signal if the patient can come on short notice to an appointment. The example is similar to http://hl7.org/fhir/R4/appointmentresponse-example.json.html with adition for the extension.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473.html"
+                     title="Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473">PatientExample</a>
+               </td>
+               <td>
+
 </td>
             </tr>
          </tbody>
@@ -287,7 +305,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023 <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package my.id#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 4.3.0</a>. Generated <span title="Thu, Apr 27, 2023 14:52+0200">2023-04-27</span>
+          IG &#169; 2023 <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Example Publisher</a>.  Package my.id#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 20, 2023 11:38+0200">2023-07-20</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

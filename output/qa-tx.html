@@ -1,0 +1,29 @@
+<html><head><title>Terminology Server Log</title></head><body><h2>Terminology Server Log</h2><pre>
+
+--- 1 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/ValueSet/$expand?_limit=1000&_incomplete=true HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"excludeNested","valueBoolean":false},{"name":"incomplete-ok","valueBoolean":true},{"name":"tx-resource","resource":{"resourceType":"CodeSystem","id":"contact-point-system","meta":{"lastUpdated":"2019-11-01T09:29:23.356+11:00"},"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/structuredefinition-wg","valueCode":"fhir"},{"url":"http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status","valueCode":"normative"},{"url":"http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version","valueCode":"4.0.0"},{"url":"http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm","valueInteger":5}],"url":"http://hl7.org/fhir/contact-point-system","identifier":[{"system":"urn:ietf:rfc:3986","value":"urn:oid:2.16.840.1.113883.4.642.4.72"}],"version":"4.0.1","name":"ContactPointSystem","title":"ContactPointSystem","status":"active","experimental":false,"date":"2019-11-01T09:29:23+11:00","publisher":"HL7 (FHIR Project)","contact":[{"telecom":[{"system":"url","value":"http://hl7.org/fhir"},{"system":"email","value":"fhir@lists.hl7.org"}]}],"description":"Telecommunications form for contact point.","caseSensitive":true,"valueSet":"http://hl7.org/fhir/ValueSet/contact-point-system","content":"complete","concept":[{"code":"phone","display":"Phone","definition":"The value is a telephone number used for voice calls. Use of full international numbers starting with + is recommended to enable automatic dialing support but not required."},{"code":"fax","display":"Fax","definition":"The value is a fax machine. Use of full international numbers starting with + is recommended to enable automatic dialing support but not required."},{"code":"email","display":"Email","definition":"The value is an email address."},{"code":"pager","display":"Pager","definition":"The value is a pager number. These may be local pager numbers that are only usable on a particular pager system."},{"code":"url","display":"URL","definition":"A contact that is not a phone, fax, pager or email address and is expressed as a URL.  This is intended for various institutional or personal contacts including web sites, blogs, Skype, Twitter, Facebook, etc. Do not use for email addresses."},{"code":"sms","display":"SMS","definition":"A contact that can be used for sending an sms message (e.g. mobile phones, some landlines)."},{"code":"other","display":"Other","definition":"A contact that is not a phone, fax, page or email address and is not expressible as a URL.  E.g. Internal mail address.  This SHOULD NOT be used for contacts that are expressible as a URL (e.g. Skype, Twitter, Facebook, etc.)  Extensions may be used to distinguish \"other\" contact types."}]}},{"name":"cache-id","valueId":"429f759c-bf4b-41d9-bf14-6ec65b9960c9"},{"name":"valueSet","resource":{"resourceType":"ValueSet","id":"no-basis-virtual-service-type-vs","text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>urn:oid:2.16.840.1.113883.4.642.4.1809</code></li><li>Include all codes defined in <a href=\"http://hl7.org/fhir/R4/codesystem-contact-point-system.html\"><code>http://hl7.org/fhir/contact-point-system</code></a></li></ul></div>"},"url":"http://example.org/ValueSet/no-basis-virtual-service-type-vs","version":"0.2.0","name":"NoBasisVirtualServiceTypeVS","title":"No Basis VirtualServiceType Value Set","status":"draft","date":"2023-07-20T11:38:03+02:00","publisher":"Example Publisher","contact":[{"name":"Example Publisher","telecom":[{"system":"url","value":"http://example.org/example-publisher"}]}],"description":"Example codes for possible virtual service connection types.","compose":{"include":[{"system":"urn:oid:2.16.840.1.113883.4.642.4.1809"},{"system":"http://hl7.org/fhir/contact-point-system"}]}}},{"name":"_limit","valueString":"1000"},{"name":"_incomplete","valueString":"true"}]}
+
+
+Response: 
+
+422
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+connection:keep-alive
+content-length:385
+content-type:application/fhir+json
+date:Thu, 20 Jul 2023 09:38:26 GMT
+server:nginx
+x-request-id:15-1271329
+
+{"resourceType" : "OperationOutcome","text" : {"status" : "generated","div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Unable to provide support for code system urn:oid:2.16.840.1.113883.4.642.4.1809</p></div>"},"issue" : [{"severity" : "error","code" : "not-supported","details" : {"text" : "Unable to provide support for code system urn:oid:2.16.840.1.113883.4.642.4.1809"}}]}
+</pre></head></html>

@@ -3,14 +3,14 @@
   "id" : "my.id",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Hl7NorgeNoBasisAppointment</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/my.id</pre></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Hl7NorgeNoBasisAppointment</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/my.id</pre><div><p>Proposal for new no basis profiles for appointment and appointmentResponse based on result from workshop.</p>\n</div></div>"
   },
   "url" : "http://example.org/ImplementationGuide/my.id",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "Hl7NorgeNoBasisAppointment",
-  "title" : "Proposal for No Basis Appointment",
+  "title" : "Proposal for No Basis Appointment and NO Basis AppointmentResponse",
   "status" : "draft",
-  "date" : "2023-04-27T14:52:10+02:00",
+  "date" : "2023-07-20T11:38:03+02:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -19,9 +19,10 @@
       "value" : "http://example.org/example-publisher"
     }]
   }],
+  "description" : "Proposal for new no basis profiles for appointment and appointmentResponse based on result from workshop.",
   "packageId" : "my.id",
   "license" : "CC0-1.0",
-  "fhirVersion" : ["4.3.0"],
+  "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
     "id" : "hl7tx",
     "extension" : [{
@@ -31,6 +32,16 @@
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
     "version" : "5.0.0"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r4",
+    "version" : "1.0.0"
   }],
   "definition" : {
     "extension" : [{
@@ -296,6 +307,10 @@
         "valueString" : "true"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools#current"
     },
     {
       "extension" : [{
@@ -564,13 +579,49 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Appointment"
+      }],
+      "reference" : {
+        "reference" : "Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a"
+      },
+      "name" : "AppointmentExample",
+      "description" : "Discussion on the results of your recent MRI",
+      "exampleCanonical" : "http://example.org/StructureDefinition/no-basis-Appointment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/no-basis-virtual-service-type-vs"
+      },
+      "name" : "No Basis VirtualServiceType Value Set",
+      "description" : "Example codes for possible virtual service connection types.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/no-basis-Appointment-new"
+        "reference" : "StructureDefinition/no-basis-Appointment"
       },
       "name" : "no-basis-Appointment",
-      "description" : "Base profile for Norwegian Appointment information. Defined by HL7 Norway. This profile identifies a set of minimum expectations for an Appointment resource when creating, searching and retrieving compositions by defining which coding system(s) must be present when using this profile. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.",
+      "description" : "Base profile for Norwegian Appointment information. Defined by HL7 Norway. This profile identifies a set of minimum expectations for an Appointment resource when creating, searching and retrieving compositions by defining which coding system(s) can be present when using this profile. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/no-basis-AppointmentResponse"
+      },
+      "name" : "no-basis-AppointmentResponse",
+      "description" : "Basisprofil for Norwegian AppointmentResponse information. Defined by HL7 Norway. Should be used as a basis for further profiling in use-cases where specific appointment respons information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to each use-case.",
       "exampleBoolean" : false
     },
     {
@@ -603,10 +654,10 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/no-basis-postponementreason"
+        "reference" : "StructureDefinition/no-basis-shortnotice"
       },
-      "name" : "no-basis-postponementreason",
-      "description" : "The reason code for the postponement.",
+      "name" : "no-basis-shortnotice",
+      "description" : "The basis extension defines a boolean concept that expresses the possibility to meet on short notice if the there are available appointment slots.",
       "exampleBoolean" : false
     },
     {
@@ -624,44 +675,39 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "AppointmentResponse"
       }],
       "reference" : {
-        "reference" : "ValueSet/no-basis-virtual-service-type-vs"
+        "reference" : "AppointmentResponse/PatientAppointmentResponseExample"
       },
-      "name" : "No Basis VirtualServiceType Value Set",
-      "description" : "Example codes for possible virtual service connection types.",
-      "exampleBoolean" : false
+      "name" : "PatientAppointmentResponseExample",
+      "description" : "Example of Patient response to an appointment using no-basis profile. The profile is identical to the basis profile axept there is a extension that can be used for patient to signal if the patient can come on short notice to an appointment. The example is similar to http://hl7.org/fhir/R4/appointmentresponse-example.json.html with adition for the extension.",
+      "exampleCanonical" : "http://example.org/StructureDefinition/no-basis-AppointmentResponse"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Appointment"
+        "valueString" : "Patient"
       }],
       "reference" : {
-        "reference" : "Appointment/NoBasisAppointmentExample1"
+        "reference" : "Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473"
       },
-      "name" : "NoBasisAppointmentExample1",
-      "description" : "Discussion on the results of your recent MRI",
-      "exampleCanonical" : "http://example.org/StructureDefinition/no-basis-Appointment-new"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Appointment"
-      }],
-      "reference" : {
-        "reference" : "Appointment/NoBasisAppointmentExample2"
-      },
-      "name" : "NoBasisAppointmentExample2",
-      "description" : "Group session for psychiatric patients",
-      "exampleCanonical" : "http://example.org/StructureDefinition/no-basis-Appointment-new"
+      "name" : "PatientExample",
+      "exampleBoolean" : true
     }],
     "page" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+        "valueUrl" : "toc.html"
+      }],
       "nameUrl" : "toc.html",
       "title" : "Table of Contents",
       "generation" : "html",
       "page" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "index.html"
+        }],
         "nameUrl" : "index.html",
         "title" : "Home",
         "generation" : "markdown"

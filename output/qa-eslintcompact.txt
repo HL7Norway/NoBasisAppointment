@@ -1,0 +1,24 @@
+﻿C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a.json: line 16, col 8, Info - Code System URI 'urn:oid:2.16.578.1.12.4.1.1.7617' is unknown so the code cannot be validated (UNKNOWN)
+C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a.json: line 12, col 8, Info - This element does not match any known slice defined in the profile http://example.org/StructureDefinition/no-basis-Appointment|0.2.0 (INFORMATIONAL)
+C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a.json: line 16, col 8, Info - This element does not match any known slice defined in the profile http://example.org/StructureDefinition/no-basis-Appointment|0.2.0 (INFORMATIONAL)
+C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-Appointment.json: line 1, col 37904, Warning - value should not start or finish with whitespace 'Virtual Service ' (INVALID)
+C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-Appointment.json: line 0, col 0, Warning - The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8406 on element Appointment.appointmentType.coding could not be resolved (BUSINESSRULE)
+C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-Appointment.json: line 0, col 0, Warning - The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8432 on element Appointment.appointmentType.coding could not be resolved (BUSINESSRULE)
+C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-Appointment.json: line 0, col 0, Warning - The valueSet reference urn:oid:2.16.578.1.12.4.1.1.7617 on element Appointment.appointmentType.coding could not be resolved (BUSINESSRULE)
+C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-Appointment.json: line 0, col 0, Warning - The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8406 on element Appointment.appointmentType.coding could not be resolved (BUSINESSRULE)
+C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-Appointment.json: line 0, col 0, Warning - The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8432 on element Appointment.appointmentType.coding could not be resolved (BUSINESSRULE)
+C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-Appointment.json: line 0, col 0, Warning - The valueSet reference urn:oid:2.16.578.1.12.4.1.1.7617 on element Appointment.appointmentType.coding could not be resolved (BUSINESSRULE)
+C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-group.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
+C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-partof.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
+C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-virtual-service.json: line 1, col 50577, Warning - value should not start or finish with whitespace 'Virtual Service ' (INVALID)
+C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-virtual-service.json: line 1, col 76867, Warning - value should not start or finish with whitespace 'Virtual Service ' (INVALID)
+C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-virtual-service.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
+C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\ValueSet-no-basis-virtual-service-type-vs.json: line 1, col 1068, Warning - The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile (REQUIRED)
+C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\ValueSet-no-basis-virtual-service-type-vs.json: line 0, col 0, Warning - Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.4.642.4.1809 (EXCEPTION)
+
+Hl7NorgeNoBasisAppointment : Validation Results
+=========================================
+
+err = 0, warn = 22, info = 3
+IG Publisher Version: 1.3.23
+Generated Thu Jul 20 11:38:56 CEST 2023. FHIR version 4.0.1 for my.id#0.2.0 (canonical = http://example.org)

@@ -7,12 +7,12 @@ id: my.id
 canonical: http://example.org
 name: Hl7Norge-NoBasisAppointment
 #name: my-project
-title: Proposal for No Basis Appointment 
-# description: Example Implementation Guide for getting started with SUSHI
+title: Proposal for No Basis Appointment and NO Basis AppointmentResponse
+description: Proposal for new no basis profiles for appointment and appointmentResponse based on result from workshop.
 status: draft # draft | active | retired | unknown
-version: 0.1.0
-#fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
-fhirVersion: 4.3.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
+version: 0.2.0
+fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
+#fhirVersion: 4.3.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023
 releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
