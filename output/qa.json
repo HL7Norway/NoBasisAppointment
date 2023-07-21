@@ -3,7 +3,7 @@
   "name" : "Hl7NorgeNoBasisAppointmentNoBasisAppointmentResponse",
   "package-id" : "my.id",
   "ig-ver" : "0.2.0",
-  "date" : "Fri, 21 Jul, 2023 08:53:22 +0200",
+  "date" : "Fri, 21 Jul, 2023 09:07:54 +0200",
   "errs" : 0,
   "warnings" : 22,
   "hints" : 3,

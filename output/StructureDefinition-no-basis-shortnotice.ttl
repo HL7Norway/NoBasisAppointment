@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NoBasisShortNotice"] ; # 
   fhir:title [ fhir:v "no-basis-shortnotice"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-07-21T08:53:22+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-07-21T09:07:54+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;
