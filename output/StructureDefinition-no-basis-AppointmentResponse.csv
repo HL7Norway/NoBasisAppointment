@@ -24,7 +24,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "AppointmentResponse.extension:shortNotice","AppointmentResponse.extension","shortNotice","","",0,1,"","","","Extension {[CanonicalType[http://example.org/StructureDefinition/no-basis-shortnotice]]} {[]}
-","no-basis-shortnotice","Pasient can come on short notice.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","no-basis-shortnotice","Patient can come on short notice.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "AppointmentResponse.extension:shortNotice.id","AppointmentResponse.extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -36,7 +36,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "AppointmentResponse.extension:shortNotice.url","AppointmentResponse.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://example.org/StructureDefinition/no-basis-shortnotice""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
 "AppointmentResponse.extension:shortNotice.value[x]","AppointmentResponse.extension.value[x]","","","",0,1,"","","","boolean {[]} {[]}
-","Pasient can come on short notice.","Pasient can come on short notice. Response is boolean","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Patient can come on short notice.","Patient can come on short notice. Response is boolean","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "AppointmentResponse.modifierExtension","AppointmentResponse.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension {[]} {[]}

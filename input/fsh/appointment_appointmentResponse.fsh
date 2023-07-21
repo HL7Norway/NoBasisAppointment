@@ -10,8 +10,8 @@ Description: "Basisprofil for Norwegian AppointmentResponse information. Defined
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains NoBasisShortNotice named shortNotice 0..1
-* extension[shortNotice] ^definition = "Pasient can come on short notice."
-* extension[shortNotice].value[x] ^definition = "Pasient can come on short notice. Response is boolean"
+* extension[shortNotice] ^definition = "Patient can come on short notice."
+* extension[shortNotice].value[x] ^definition = "Patient can come on short notice. Response is boolean"
 
 
 Extension: NoBasisShortNotice
@@ -23,7 +23,7 @@ Description: "The basis extension defines a boolean concept that expresses the p
 * ^context.expression = "AppointmentResponse"
 * . ..1
 * value[x] only boolean
-* value[x] ^short = "Pasient can come on short notice."
+* value[x] ^short = "Patient can come on short notice."
 
 
 Instance: PatientAppointmentResponseExample
