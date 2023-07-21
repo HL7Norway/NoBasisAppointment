@@ -168,8 +168,8 @@ Title: "No Basis VirtualServiceType Value Set"
 Description: "Example codes for possible virtual service connection types."
 * ^status = #draft
 * ^version = "0.1.0"
-* include codes from system urn:oid:2.16.840.1.113883.4.642.4.1809
-* include codes from system http://hl7.org/fhir/contact-point-system
+* include codes from system urn:oid:2.16.840.1.113883.4.642.4.1809 
+* include codes from system http://hl7.org/fhir/contact-point-system 
 
 Alias: $appointment-type = http://terminology.hl7.org/CodeSystem/v2-0276
 
