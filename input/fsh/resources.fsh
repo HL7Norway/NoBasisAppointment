@@ -48,7 +48,7 @@ Usage: #example
 
 Invariant: inv-1
 Description: "The 'shortNotice' extension can only be used when the 'actor' is of type 'Patient'."
-Expression: "extension.where(url = 'no-basis-shortnotice').value.exists() and actor.type.value = 'Patient'"
+Expression: "extension.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-shortnotice').value.exists() and actor.type.value = 'Patient'"
 Severity: #error
 
 

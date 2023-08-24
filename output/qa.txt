@@ -1,12 +1,12 @@
 ﻿Hl7NorgeNoBasisAppointmentNoBasisAppointmentResponse : Validation Results
 =========================================
 
-err = 2, warn = 21, info = 3
+err = 1, warn = 21, info = 3
 IG Publisher Version: 1.4.0
-Generated Thu Aug 24 14:50:12 CEST 2023. FHIR version 4.0.1 for my.id#2.2.0-alpha (canonical = http://hl7.no/fhir)
+Generated Thu Aug 24 15:40:34 CEST 2023. FHIR version 4.0.1 for my.id#2.2.0-alpha (canonical = http://hl7.no/fhir)
  Build Errors : 0 / 8 / 0
  C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a : 0 / 0 / 4
- C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\AppointmentResponse-PatientAppointmentResponseExample : 1 / 0 / 1
+ C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\AppointmentResponse-PatientAppointmentResponseExample : 0 / 0 / 1
  C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\ImplementationGuide-my.id : 0 / 0 / 1
  C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\Patient-e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473 : 0 / 0 / 1
  C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-Appointment : 0 / 7 / 1
@@ -31,7 +31,6 @@ INFORMATION: Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a: Appointment.appoi
 INFORMATION: Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a: Appointment.appointmentType.coding[0]: This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Appointment|2.2.0-alpha
 INFORMATION: Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a: Appointment.appointmentType.coding[1]: This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Appointment|2.2.0-alpha
 == fsh-generated\resources\AppointmentResponse-PatientAppointmentResponseExample.json ==
-ERROR: AppointmentResponse/PatientAppointmentResponseExample: AppointmentResponse: Rule inv-1: 'The 'shortNotice' extension can only be used when the 'actor' is of type 'Patient'.' Failed
 == fsh-generated\resources\ImplementationGuide-my.id.json ==
 == fsh-generated\resources\Patient-e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473.json ==
 == fsh-generated\resources\StructureDefinition-no-basis-Appointment.json ==

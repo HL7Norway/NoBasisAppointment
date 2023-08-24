@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Hl7NorgeNoBasisAppointmentNoBasisAppointmentResponse"] ; # 
   fhir:title [ fhir:v "Proposal for No Basis Appointment and NO Basis AppointmentResponse"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-08-24T14:49:19+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-08-24T15:39:37+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;

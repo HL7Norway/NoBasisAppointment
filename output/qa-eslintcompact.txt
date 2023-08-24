@@ -1,7 +1,6 @@
 ﻿C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a.json: line 16, col 8, Info - Code System URI 'urn:oid:2.16.578.1.12.4.1.1.7617' is unknown so the code cannot be validated (UNKNOWN)
 C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a.json: line 12, col 8, Info - This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Appointment|2.2.0-alpha (INFORMATIONAL)
 C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a.json: line 16, col 8, Info - This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Appointment|2.2.0-alpha (INFORMATIONAL)
-C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\AppointmentResponse-PatientAppointmentResponseExample.json: line 1, col 2, Error - Rule inv-1: 'The 'shortNotice' extension can only be used when the 'actor' is of type 'Patient'.' Failed (INVARIANT)
 C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-Appointment.json: line 1, col 14232, Warning - value should not start or finish with whitespace 'Virtual Service ' (INVALID)
 C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-Appointment.json: line 0, col 0, Warning - The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8406 on element Appointment.appointmentType.coding could not be resolved (BUSINESSRULE)
 C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-Appointment.json: line 0, col 0, Warning - The valueSet reference urn:oid:2.16.578.1.12.4.1.1.8432 on element Appointment.appointmentType.coding could not be resolved (BUSINESSRULE)
@@ -20,6 +19,6 @@ C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resour
 Hl7NorgeNoBasisAppointmentNoBasisAppointmentResponse : Validation Results
 =========================================
 
-err = 2, warn = 21, info = 3
+err = 1, warn = 21, info = 3
 IG Publisher Version: 1.4.0
-Generated Thu Aug 24 14:50:12 CEST 2023. FHIR version 4.0.1 for my.id#2.2.0-alpha (canonical = http://hl7.no/fhir)
+Generated Thu Aug 24 15:40:34 CEST 2023. FHIR version 4.0.1 for my.id#2.2.0-alpha (canonical = http://hl7.no/fhir)
