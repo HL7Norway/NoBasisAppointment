@@ -5,13 +5,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://example.org/Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a> a fhir:Appointment ;
+<http://hl7.no/fhir/Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a> a fhir:Appointment ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "d6c523ec-b520-4221-a8d6-c1c58911ce7a"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://example.org/StructureDefinition/no-basis-Appointment"^^xsd:anyURI ;
-       fhir:link <http://example.org/StructureDefinition/no-basis-Appointment>
+       fhir:v "http://hl7.no/fhir/StructureDefinition/no-basis-Appointment"^^xsd:anyURI ;
+       fhir:link <http://hl7.no/fhir/StructureDefinition/no-basis-Appointment>
      ] )
   ] ; # 
   fhir:text [
@@ -34,7 +34,7 @@
   fhir:comment [ fhir:v "Further expand on the results of the MRI and determine the next actions that may be appropriate."] ; # 
   fhir:participant ( [
      fhir:actor [
-       fhir:link <http://example.org/Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473> ;
+       fhir:link <http://hl7.no/fhir/Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473> ;
        fhir:reference [ fhir:v "Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473" ] ;
        fhir:display [ fhir:v "Peter James Chalmers" ]
      ] ;

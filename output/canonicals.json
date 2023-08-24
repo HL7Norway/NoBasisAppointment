@@ -2,57 +2,57 @@
   {
     "id" : "my.id",
     "type" : "ImplementationGuide",
-    "url" : "http://example.org/ImplementationGuide/my.id",
-    "version" : "0.2.0",
+    "url" : "http://hl7.no/fhir/ImplementationGuide/my.id",
+    "version" : "2.2.0-alpha",
     "name" : "Hl7NorgeNoBasisAppointmentNoBasisAppointmentResponse"
   },
   {
     "id" : "no-basis-Appointment",
     "type" : "StructureDefinition",
-    "url" : "http://example.org/StructureDefinition/no-basis-Appointment",
-    "version" : "0.2.0",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-Appointment",
+    "version" : "2.2.0-alpha",
     "name" : "NoBasisAppointment"
   },
   {
     "id" : "no-basis-AppointmentResponse",
     "type" : "StructureDefinition",
-    "url" : "http://example.org/StructureDefinition/no-basis-AppointmentResponse",
-    "version" : "0.2.0",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-AppointmentResponse",
+    "version" : "2.2.0-alpha",
     "name" : "NoBasisAppointmentResponse"
   },
   {
     "id" : "no-basis-group",
     "type" : "StructureDefinition",
-    "url" : "http://example.org/StructureDefinition/no-basis-group",
-    "version" : "0.2.0",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-group",
+    "version" : "2.2.0-alpha",
     "name" : "NoBasisGroup"
   },
   {
     "id" : "no-basis-partof",
     "type" : "StructureDefinition",
-    "url" : "http://example.org/StructureDefinition/no-basis-partof",
-    "version" : "0.2.0",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-partof",
+    "version" : "2.2.0-alpha",
     "name" : "NoBasisPartOf"
   },
   {
     "id" : "no-basis-shortnotice",
     "type" : "StructureDefinition",
-    "url" : "http://example.org/StructureDefinition/no-basis-shortnotice",
-    "version" : "0.2.0",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-shortnotice",
+    "version" : "2.2.0-alpha",
     "name" : "NoBasisShortNotice"
   },
   {
     "id" : "no-basis-virtual-service",
     "type" : "StructureDefinition",
-    "url" : "http://example.org/StructureDefinition/no-basis-virtual-service",
-    "version" : "0.2.0",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-virtual-service",
+    "version" : "2.2.0-alpha",
     "name" : "NoBasisVirtualService"
   },
   {
     "id" : "no-basis-virtual-service-type-vs",
     "type" : "ValueSet",
-    "url" : "http://example.org/ValueSet/no-basis-virtual-service-type-vs",
-    "version" : "0.2.0",
+    "url" : "http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type-vs",
+    "version" : "2.2.0-alpha",
     "name" : "NoBasisVirtualServiceTypeVS"
   }
 ]

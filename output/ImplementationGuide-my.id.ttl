@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://example.org/ImplementationGuide/my.id> a fhir:ImplementationGuide ;
+<http://hl7.no/fhir/ImplementationGuide/my.id> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "my.id"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Hl7NorgeNoBasisAppointmentNoBasisAppointmentResponse</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/my.id</pre><div><p>Proposal for new no basis profiles for appointment and appointmentResponse based on result from workshop.</p>\n</div></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   ] ; # 
-  fhir:url [ fhir:v "http://example.org/ImplementationGuide/my.id"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:url [ fhir:v "http://hl7.no/fhir/ImplementationGuide/my.id"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.2.0-alpha"] ; # 
   fhir:name [ fhir:v "Hl7NorgeNoBasisAppointmentNoBasisAppointmentResponse"] ; # 
   fhir:title [ fhir:v "Proposal for No Basis Appointment and NO Basis AppointmentResponse"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-07-21T09:07:54+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-08-24T14:49:19+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;
@@ -143,7 +143,7 @@
          fhir:value [ fhir:v "path-history" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "http://example.org/history.html" ]
+         fhir:value [ fhir:v "http://hl7.no/fhir/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -362,7 +362,7 @@
          fhir:value [ fhir:v "path-history" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "http://example.org/history.html" ]
+         fhir:value [ fhir:v "http://hl7.no/fhir/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -498,14 +498,14 @@
          fhir:value [ fhir:v "Appointment" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a> ;
+         fhir:link <http://hl7.no/fhir/Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a> ;
          fhir:reference [ fhir:v "Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a" ]
        ] ;
        fhir:name [ fhir:v "AppointmentExample" ] ;
        fhir:description [ fhir:v "Discussion on the results of your recent MRI" ] ;
        fhir:example [
-         fhir:v "http://example.org/StructureDefinition/no-basis-Appointment"^^xsd:anyURI ;
-         fhir:link <http://example.org/StructureDefinition/no-basis-Appointment>
+         fhir:v "http://hl7.no/fhir/StructureDefinition/no-basis-Appointment"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-basis-Appointment>
        ]
      ] [
        fhir:extension ( [
@@ -513,11 +513,11 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/ValueSet/no-basis-virtual-service-type-vs> ;
+         fhir:link <http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type-vs> ;
          fhir:reference [ fhir:v "ValueSet/no-basis-virtual-service-type-vs" ]
        ] ;
        fhir:name [ fhir:v "No Basis VirtualServiceType Value Set" ] ;
-       fhir:description [ fhir:v "Example codes for possible virtual service connection types." ] ;
+       fhir:description [ fhir:v "Example codes for virtual service connection types. Any other codes or codesystem should be added to this valueSet" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -525,7 +525,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/no-basis-Appointment> ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-basis-Appointment> ;
          fhir:reference [ fhir:v "StructureDefinition/no-basis-Appointment" ]
        ] ;
        fhir:name [ fhir:v "no-basis-Appointment" ] ;
@@ -537,7 +537,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/no-basis-AppointmentResponse> ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-basis-AppointmentResponse> ;
          fhir:reference [ fhir:v "StructureDefinition/no-basis-AppointmentResponse" ]
        ] ;
        fhir:name [ fhir:v "no-basis-AppointmentResponse" ] ;
@@ -549,7 +549,7 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/no-basis-group> ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-basis-group> ;
          fhir:reference [ fhir:v "StructureDefinition/no-basis-group" ]
        ] ;
        fhir:name [ fhir:v "no-basis-group" ] ;
@@ -561,7 +561,7 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/no-basis-partof> ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-basis-partof> ;
          fhir:reference [ fhir:v "StructureDefinition/no-basis-partof" ]
        ] ;
        fhir:name [ fhir:v "no-basis-partof" ] ;
@@ -573,7 +573,7 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/no-basis-shortnotice> ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-basis-shortnotice> ;
          fhir:reference [ fhir:v "StructureDefinition/no-basis-shortnotice" ]
        ] ;
        fhir:name [ fhir:v "no-basis-shortnotice" ] ;
@@ -585,7 +585,7 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/no-basis-virtual-service> ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-basis-virtual-service> ;
          fhir:reference [ fhir:v "StructureDefinition/no-basis-virtual-service" ]
        ] ;
        fhir:name [ fhir:v "no-basis-Virtual-Service" ] ;
@@ -597,14 +597,14 @@
          fhir:value [ fhir:v "AppointmentResponse" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/AppointmentResponse/PatientAppointmentResponseExample> ;
+         fhir:link <http://hl7.no/fhir/AppointmentResponse/PatientAppointmentResponseExample> ;
          fhir:reference [ fhir:v "AppointmentResponse/PatientAppointmentResponseExample" ]
        ] ;
        fhir:name [ fhir:v "PatientAppointmentResponseExample" ] ;
        fhir:description [ fhir:v "Example of Patient response to an appointment using no-basis profile. The profile is identical to the basis profile axept there is a extension that can be used for patient to signal if the patient can come on short notice to an appointment. The example is similar to http://hl7.org/fhir/R4/appointmentresponse-example.json.html with adition for the extension." ] ;
        fhir:example [
-         fhir:v "http://example.org/StructureDefinition/no-basis-AppointmentResponse"^^xsd:anyURI ;
-         fhir:link <http://example.org/StructureDefinition/no-basis-AppointmentResponse>
+         fhir:v "http://hl7.no/fhir/StructureDefinition/no-basis-AppointmentResponse"^^xsd:anyURI ;
+         fhir:link <http://hl7.no/fhir/StructureDefinition/no-basis-AppointmentResponse>
        ]
      ] [
        fhir:extension ( [
@@ -612,7 +612,7 @@
          fhir:value [ fhir:v "Patient" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473> ;
+         fhir:link <http://hl7.no/fhir/Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473> ;
          fhir:reference [ fhir:v "Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473" ]
        ] ;
        fhir:name [ fhir:v "PatientExample" ] ;

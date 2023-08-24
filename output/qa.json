@@ -1,11 +1,11 @@
 {
-  "url" : "http://example.org/ImplementationGuide/my.id",
+  "url" : "http://hl7.no/fhir/ImplementationGuide/my.id",
   "name" : "Hl7NorgeNoBasisAppointmentNoBasisAppointmentResponse",
   "package-id" : "my.id",
-  "ig-ver" : "0.2.0",
-  "date" : "Fri, 21 Jul, 2023 09:07:54 +0200",
-  "errs" : 0,
-  "warnings" : 22,
+  "ig-ver" : "2.2.0-alpha",
+  "date" : "Thu, 24 Aug, 2023 14:49:19 +0200",
+  "errs" : 2,
+  "warnings" : 21,
   "hints" : 3,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)"

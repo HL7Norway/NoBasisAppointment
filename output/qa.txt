@@ -1,12 +1,12 @@
 ﻿Hl7NorgeNoBasisAppointmentNoBasisAppointmentResponse : Validation Results
 =========================================
 
-err = 0, warn = 22, info = 3
-IG Publisher Version: 1.3.23
-Generated Fri Jul 21 09:08:50 CEST 2023. FHIR version 4.0.1 for my.id#0.2.0 (canonical = http://example.org)
+err = 2, warn = 21, info = 3
+IG Publisher Version: 1.4.0
+Generated Thu Aug 24 14:50:12 CEST 2023. FHIR version 4.0.1 for my.id#2.2.0-alpha (canonical = http://hl7.no/fhir)
  Build Errors : 0 / 8 / 0
  C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a : 0 / 0 / 4
- C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\AppointmentResponse-PatientAppointmentResponseExample : 0 / 0 / 1
+ C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\AppointmentResponse-PatientAppointmentResponseExample : 1 / 0 / 1
  C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\ImplementationGuide-my.id : 0 / 0 / 1
  C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\Patient-e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473 : 0 / 0 / 1
  C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-Appointment : 0 / 7 / 1
@@ -15,7 +15,7 @@ Generated Fri Jul 21 09:08:50 CEST 2023. FHIR version 4.0.1 for my.id#0.2.0 (can
  C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-partof : 0 / 1 / 1
  C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-shortnotice : 0 / 0 / 1
  C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-virtual-service : 0 / 3 / 1
- C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\ValueSet-no-basis-virtual-service-type-vs : 0 / 2 / 1
+ C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\ValueSet-no-basis-virtual-service-type-vs : 1 / 1 / 1
 </table>
 == n/a ==
 WARNING: Appointment.appointmentType.coding: The reference urn:oid:2.16.578.1.12.4.1.1.8406 could not be resolved
@@ -28,9 +28,10 @@ WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-ta
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated\resources\Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a.json ==
 INFORMATION: Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a: Appointment.appointmentType.coding[1]: Code System URI 'urn:oid:2.16.578.1.12.4.1.1.7617' is unknown so the code cannot be validated
-INFORMATION: Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a: Appointment.appointmentType.coding[0]: This element does not match any known slice defined in the profile http://example.org/StructureDefinition/no-basis-Appointment|0.2.0
-INFORMATION: Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a: Appointment.appointmentType.coding[1]: This element does not match any known slice defined in the profile http://example.org/StructureDefinition/no-basis-Appointment|0.2.0
+INFORMATION: Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a: Appointment.appointmentType.coding[0]: This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Appointment|2.2.0-alpha
+INFORMATION: Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a: Appointment.appointmentType.coding[1]: This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Appointment|2.2.0-alpha
 == fsh-generated\resources\AppointmentResponse-PatientAppointmentResponseExample.json ==
+ERROR: AppointmentResponse/PatientAppointmentResponseExample: AppointmentResponse: Rule inv-1: 'The 'shortNotice' extension can only be used when the 'actor' is of type 'Patient'.' Failed
 == fsh-generated\resources\ImplementationGuide-my.id.json ==
 == fsh-generated\resources\Patient-e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473.json ==
 == fsh-generated\resources\StructureDefinition-no-basis-Appointment.json ==
@@ -43,14 +44,14 @@ WARNING: StructureDefinition/no-basis-Appointment: StructureDefinition.snapshot.
 WARNING: StructureDefinition/no-basis-Appointment: StructureDefinition.snapshot.element[24].binding: The valueSet reference urn:oid:2.16.578.1.12.4.1.1.7617 on element Appointment.appointmentType.coding could not be resolved
 == fsh-generated\resources\StructureDefinition-no-basis-AppointmentResponse.json ==
 == fsh-generated\resources\StructureDefinition-no-basis-group.json ==
-WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/no-basis-group'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-group'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-no-basis-partof.json ==
-WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/no-basis-partof'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-partof'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-no-basis-shortnotice.json ==
 == fsh-generated\resources\StructureDefinition-no-basis-virtual-service.json ==
 WARNING: StructureDefinition/no-basis-virtual-service: StructureDefinition.snapshot.element[0].short: value should not start or finish with whitespace 'Virtual Service '
 WARNING: StructureDefinition/no-basis-virtual-service: StructureDefinition.differential.element[0].short: value should not start or finish with whitespace 'Virtual Service '
-WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/no-basis-virtual-service'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-virtual-service'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\ValueSet-no-basis-virtual-service-type-vs.json ==
-WARNING: ValueSet/no-basis-virtual-service-type-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+ERROR: ValueSet/no-basis-virtual-service-type-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'no-basis-virtual-service-type-vs'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.4.642.4.1809

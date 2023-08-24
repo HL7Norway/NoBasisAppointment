@@ -3,7 +3,7 @@ Parent: AppointmentResponse
 Id: no-basis-AppointmentResponse
 Title: "no-basis-AppointmentResponse"
 Description: "Basisprofil for Norwegian AppointmentResponse information. Defined by HL7 Norway. Should be used as a basis for further profiling in use-cases where specific appointment respons information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to each use-case."
-* ^version = "2.2.0-alpha"
+* ^version = "1.0.0"
 * ^status = #draft
 * obeys inv-1
 * extension ^slicing.discriminator.type = #value
@@ -48,7 +48,7 @@ Usage: #example
 
 Invariant: inv-1
 Description: "The 'shortNotice' extension can only be used when the 'actor' is of type 'Patient'."
-Expression: "extension.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-shortnotice').value.exists() and actor.type.value = 'Patient'"
+Expression: "extension.where(url = 'no-basis-shortnotice').value.exists() and actor.type.value = 'Patient'"
 Severity: #error
 
 
@@ -58,7 +58,7 @@ Parent: Appointment
 Id: no-basis-Appointment
 Title: "no-basis-Appointment"
 Description: "Base profile for Norwegian Appointment information. Defined by HL7 Norway. This profile identifies a set of minimum expectations for an Appointment resource when creating, searching and retrieving compositions by defining which coding system(s) can be present when using this profile. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case."
-* ^version = "0.9.0"
+* ^version = "1.0.0"
 * ^status = #draft
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
@@ -90,7 +90,7 @@ Description: "Base profile for Norwegian Appointment information. Defined by HL7
 * appointmentType.coding[innbygger] ^mustSupport = false
 * appointmentType.coding[innbygger] ^binding.description = "Volven"
 * appointmentType.coding ^short = "Recomended code systems for no-basis-Appointment."
-* appointmentType.coding ^definition = "Recomended code systems for n-basis-Appointment. The reconmended code systems might not be suficient for defining appointment type and in an implemented profile - some other coding might be needed."
+* appointmentType.coding ^definition = "Recomended code systems for no-basis-Appointment. The recomended code systems might not be suficient for defining appointment type and in an implemented profile - some other coding might be needed."
 
 
 
@@ -144,7 +144,7 @@ Description: "The VirtualService is based on VirtualServiceDetail structure from
 * extension[channelType] ^short = "Channel Type"
 * extension[channelType] ^definition = "The type of virtual service to connect to."
 * extension[channelType].value[x] only Coding
-* extension[channelType].value[x] from no-basis-virtual-service-type-vs (example)
+* extension[channelType].value[x] from NoBasisVirtualServiceTypeVS (example)
 * extension[channelType].value[x] ^short = "Valuset for virtual servie."
 * extension[channelType].value[x] ^definition = "The valuesett inherits all codes from http://hl7.org/fhir/contact-point-system and http://hl7.org/fhir/virtual-service-type. Virtual-service-type is from R5. "
 * extension[virtualAddress] ^short = "Contact address/number"
@@ -165,7 +165,7 @@ Description: "The VirtualService is based on VirtualServiceDetail structure from
 ValueSet: NoBasisVirtualServiceTypeVS
 Id: no-basis-virtual-service-type-vs
 Title: "No Basis VirtualServiceType Value Set"
-Description: "Example codes for possible virtual service connection types."
+Description: "Example codes for virtual service connection types. Any other codes or codesystem should be added to this valueSet"
 * ^status = #draft
 * ^version = "0.1.0"
 * include codes from system urn:oid:2.16.840.1.113883.4.642.4.1809 

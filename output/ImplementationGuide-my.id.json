@@ -3,14 +3,14 @@
   "id" : "my.id",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Hl7NorgeNoBasisAppointmentNoBasisAppointmentResponse</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/my.id</pre><div><p>Proposal for new no basis profiles for appointment and appointmentResponse based on result from workshop.</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
-  "url" : "http://example.org/ImplementationGuide/my.id",
-  "version" : "0.2.0",
+  "url" : "http://hl7.no/fhir/ImplementationGuide/my.id",
+  "version" : "2.2.0-alpha",
   "name" : "Hl7NorgeNoBasisAppointmentNoBasisAppointmentResponse",
   "title" : "Proposal for No Basis Appointment and NO Basis AppointmentResponse",
   "status" : "draft",
-  "date" : "2023-07-21T09:07:54+02:00",
+  "date" : "2023-08-24T14:49:19+02:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -150,7 +150,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://example.org/history.html"
+        "valueString" : "http://hl7.no/fhir/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -418,7 +418,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://example.org/history.html"
+        "valueString" : "http://hl7.no/fhir/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -586,7 +586,7 @@
       },
       "name" : "AppointmentExample",
       "description" : "Discussion on the results of your recent MRI",
-      "exampleCanonical" : "http://example.org/StructureDefinition/no-basis-Appointment"
+      "exampleCanonical" : "http://hl7.no/fhir/StructureDefinition/no-basis-Appointment"
     },
     {
       "extension" : [{
@@ -597,7 +597,7 @@
         "reference" : "ValueSet/no-basis-virtual-service-type-vs"
       },
       "name" : "No Basis VirtualServiceType Value Set",
-      "description" : "Example codes for possible virtual service connection types.",
+      "description" : "Example codes for virtual service connection types. Any other codes or codesystem should be added to this valueSet",
       "exampleBoolean" : false
     },
     {
@@ -682,7 +682,7 @@
       },
       "name" : "PatientAppointmentResponseExample",
       "description" : "Example of Patient response to an appointment using no-basis profile. The profile is identical to the basis profile axept there is a extension that can be used for patient to signal if the patient can come on short notice to an appointment. The example is similar to http://hl7.org/fhir/R4/appointmentresponse-example.json.html with adition for the extension.",
-      "exampleCanonical" : "http://example.org/StructureDefinition/no-basis-AppointmentResponse"
+      "exampleCanonical" : "http://hl7.no/fhir/StructureDefinition/no-basis-AppointmentResponse"
     },
     {
       "extension" : [{
