@@ -3,7 +3,7 @@ Parent: AppointmentResponse
 Id: no-basis-AppointmentResponse
 Title: "no-basis-AppointmentResponse"
 Description: "Basisprofil for Norwegian AppointmentResponse information. Defined by HL7 Norway. Should be used as a basis for further profiling in use-cases where specific appointment respons information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to each use-case."
-* ^version = "1.0.0"
+* ^version = "2.2.0-alpha"
 * ^status = #draft
 * obeys inv-1
 * extension ^slicing.discriminator.type = #value
@@ -48,7 +48,7 @@ Usage: #example
 
 Invariant: inv-1
 Description: "The 'shortNotice' extension can only be used when the 'actor' is of type 'Patient'."
-Expression: "extension.where(url = 'http://example.org/StructureDefinition/no-basis-shortnotice').value.exists() and actor.type.value = 'Patient'"
+Expression: "extension.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-shortnotice').value.exists() and actor.type.value = 'Patient'"
 Severity: #error
 
 
