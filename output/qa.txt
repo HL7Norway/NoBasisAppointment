@@ -1,13 +1,13 @@
 ﻿Hl7NorgeNoBasisAppointmentNoBasisAppointmentResponse : Validation Results
 =========================================
 
-err = 1, warn = 21, info = 3
-IG Publisher Version: 1.4.0
-Generated Thu Aug 24 15:40:34 CEST 2023. FHIR version 4.0.1 for my.id#2.2.0-alpha (canonical = http://hl7.no/fhir)
+err = 1, warn = 22, info = 3
+IG Publisher Version: 1.4.0 Out of date - current version is 1.4.11
+Generated Wed Oct 04 22:17:01 CEST 2023. FHIR version 4.0.1 for my.id#2.2.0-alpha (canonical = http://hl7.no/fhir)
  Build Errors : 0 / 8 / 0
  C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a : 0 / 0 / 4
  C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\AppointmentResponse-PatientAppointmentResponseExample : 0 / 0 / 1
- C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\ImplementationGuide-my.id : 0 / 0 / 1
+ C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\ImplementationGuide-my.id : 0 / 1 / 1
  C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\Patient-e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473 : 0 / 0 / 1
  C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-Appointment : 0 / 7 / 1
  C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-AppointmentResponse : 0 / 0 / 1
@@ -32,6 +32,7 @@ INFORMATION: Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a: Appointment.appoi
 INFORMATION: Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a: Appointment.appointmentType.coding[1]: This element does not match any known slice defined in the profile http://hl7.no/fhir/StructureDefinition/no-basis-Appointment|2.2.0-alpha
 == fsh-generated\resources\AppointmentResponse-PatientAppointmentResponseExample.json ==
 == fsh-generated\resources\ImplementationGuide-my.id.json ==
+WARNING: C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\ImplementationGuide-my.id: Unknown Parameters: [apply-wg=true]
 == fsh-generated\resources\Patient-e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473.json ==
 == fsh-generated\resources\StructureDefinition-no-basis-Appointment.json ==
 WARNING: StructureDefinition/no-basis-Appointment: StructureDefinition.snapshot.element[8].short: value should not start or finish with whitespace 'Virtual Service '

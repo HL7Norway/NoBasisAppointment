@@ -4,7 +4,7 @@ Id: no-basis-AppointmentResponse
 Title: "no-basis-AppointmentResponse"
 Description: "Basisprofil for Norwegian AppointmentResponse information. Defined by HL7 Norway. Should be used as a basis for further profiling in use-cases where specific appointment respons information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to each use-case."
 * ^version = "1.0.0"
-* ^status = #draft
+* ^status = #active
 * obeys inv-1
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
@@ -18,7 +18,7 @@ Extension: NoBasisShortNotice
 Id: no-basis-shortnotice
 Title: "no-basis-shortnotice"
 Description: "The basis extension defines a boolean concept that expresses the possibility to meet on short notice if the there are available appointment slots."
-* ^status = #draft
+* ^status = #active
 * ^context.type = #element
 * ^context.expression = "AppointmentResponse"
 * . ..1
@@ -59,7 +59,7 @@ Id: no-basis-Appointment
 Title: "no-basis-Appointment"
 Description: "Base profile for Norwegian Appointment information. Defined by HL7 Norway. This profile identifies a set of minimum expectations for an Appointment resource when creating, searching and retrieving compositions by defining which coding system(s) can be present when using this profile. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case."
 * ^version = "1.0.0"
-* ^status = #draft
+* ^status = #active
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
@@ -99,7 +99,7 @@ Id: no-basis-partof
 Title: "no-basis-partof"
 Description: "This basis extension mirrors the Encounter.partOF-attribute. The partOf-attribute enables booking of a set of related appointments with a set of sub-appointments being linked to the main appointment in the same way as encounters are being linked. A larger appointment of which this particular appointment is a component or step."
 * ^version = "1.0.0"
-* ^status = #draft
+* ^status = #active
 * ^context.type = #element
 * ^context.expression = "Appointment"
 * . ^short = "no-basis-partof"
@@ -114,7 +114,7 @@ Id: no-basis-group
 Title: "no-basis-group"
 Description: "The appointment is a group session."
 * ^version = "1.0.0"
-* ^status = #draft
+* ^status = #active
 * ^context.type = #element
 * ^context.expression = "Appointment"
 * . ..1
@@ -130,7 +130,7 @@ Id: no-basis-virtual-service
 Title: "no-basis-Virtual-Service"
 Description: "The VirtualService is based on VirtualServiceDetail structure from R5 and defines details of a virtual communication capability, such as a web conference call."
 * ^version = "0.0.1"
-* ^status = #draft
+* ^status = #active
 * . ^short = "Virtual Service "
 * . ^definition = "The VirtualService structure defines details of a virtual communication capability, such as a web conference call."
 * ^context.type = #element
@@ -166,7 +166,7 @@ ValueSet: NoBasisVirtualServiceTypeVS
 Id: no-basis-virtual-service-type-vs
 Title: "No Basis VirtualServiceType Value Set"
 Description: "Example codes for virtual service connection types. Any other codes or codesystem should be added to this valueSet"
-* ^status = #draft
+* ^status = #active
 * ^version = "0.1.0"
 * include codes from system urn:oid:2.16.840.1.113883.4.642.4.1809 
 * include codes from system http://hl7.org/fhir/contact-point-system 
