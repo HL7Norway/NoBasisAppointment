@@ -2,8 +2,8 @@
 =========================================
 
 err = 1, warn = 22, info = 3
-IG Publisher Version: 1.4.0 Out of date - current version is 1.4.11
-Generated Wed Oct 04 22:21:29 CEST 2023. FHIR version 4.0.1 for my.id#2.2.0-alpha (canonical = http://hl7.no/fhir)
+IG Publisher Version: 1.4.0 Out of date - current version is 1.4.12
+Generated Thu Oct 05 18:45:52 CEST 2023. FHIR version 4.0.1 for my.id#2.2.0-alpha (canonical = http://hl7.no/fhir)
  Build Errors : 0 / 8 / 0
  C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a : 0 / 0 / 4
  C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\AppointmentResponse-PatientAppointmentResponseExample : 0 / 0 / 1

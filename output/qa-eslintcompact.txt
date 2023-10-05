@@ -14,12 +14,12 @@ C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resour
 C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-virtual-service.json: line 1, col 1109, Warning - value should not start or finish with whitespace 'Virtual Service ' (INVALID)
 C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-virtual-service.json: line 1, col 27399, Warning - value should not start or finish with whitespace 'Virtual Service ' (INVALID)
 C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-virtual-service.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
-C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\ValueSet-no-basis-virtual-service-type-vs.json: line 1, col 808, Error - The ShareableValueSet profile says that the experimental element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile (REQUIRED)
+C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\ValueSet-no-basis-virtual-service-type-vs.json: line 1, col 809, Error - The ShareableValueSet profile says that the experimental element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile (REQUIRED)
 C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\ValueSet-no-basis-virtual-service-type-vs.json: line 0, col 0, Warning - Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.4.642.4.1809 (EXCEPTION)
 
 Hl7NorgeNoBasisAppointmentNoBasisAppointmentResponse : Validation Results
 =========================================
 
 err = 1, warn = 22, info = 3
-IG Publisher Version: 1.4.0 Out of date - current version is 1.4.11
-Generated Wed Oct 04 22:21:29 CEST 2023. FHIR version 4.0.1 for my.id#2.2.0-alpha (canonical = http://hl7.no/fhir)
+IG Publisher Version: 1.4.0 Out of date - current version is 1.4.12
+Generated Thu Oct 05 18:45:52 CEST 2023. FHIR version 4.0.1 for my.id#2.2.0-alpha (canonical = http://hl7.no/fhir)
