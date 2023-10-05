@@ -17,7 +17,8 @@
   fhir:name [ fhir:v "NoBasisVirtualServiceTypeVS"] ; # 
   fhir:title [ fhir:v "No Basis VirtualServiceType Value Set"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-10-05T18:59:01+02:00"^^xsd:dateTime] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-10-05T22:34:13+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;
@@ -26,7 +27,7 @@
        fhir:value [ fhir:v "http://example.org/example-publisher" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Example codes for possible virtual service connection types."] ; # 
+  fhir:description [ fhir:v "Example codes for virtual service connection types. Any other codes or codesystem should be added to this valueSet"] ; # 
   fhir:compose [
      fhir:include ( [
        fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.4.642.4.1809"^^xsd:anyURI ]

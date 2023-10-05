@@ -1,9 +1,9 @@
 ﻿Hl7NorgeNoBasisAppointmentNoBasisAppointmentResponse : Validation Results
 =========================================
 
-err = 1, warn = 22, info = 3
+err = 0, warn = 22, info = 3
 IG Publisher Version: 1.4.0 Out of date - current version is 1.4.12
-Generated Thu Oct 05 18:59:55 CEST 2023. FHIR version 4.0.1 for my.id#2.2.0-alpha (canonical = http://hl7.no/fhir)
+Generated Thu Oct 05 22:35:08 CEST 2023. FHIR version 4.0.1 for my.id#2.2.0-alpha (canonical = http://hl7.no/fhir)
  Build Errors : 0 / 8 / 0
  C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a : 0 / 0 / 4
  C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\AppointmentResponse-PatientAppointmentResponseExample : 0 / 0 / 1
@@ -15,7 +15,7 @@ Generated Thu Oct 05 18:59:55 CEST 2023. FHIR version 4.0.1 for my.id#2.2.0-alph
  C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-partof : 0 / 1 / 1
  C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-shortnotice : 0 / 0 / 1
  C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\StructureDefinition-no-basis-virtual-service : 0 / 3 / 1
- C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\ValueSet-no-basis-virtual-service-type-vs : 1 / 1 / 1
+ C:\Users\arman\OneDrive\Documents\GitHub\NoBasisAppointment\fsh-generated\resources\ValueSet-no-basis-virtual-service-type-vs : 0 / 1 / 1
 </table>
 == n/a ==
 WARNING: Appointment.appointmentType.coding: The reference urn:oid:2.16.578.1.12.4.1.1.8406 could not be resolved
@@ -53,5 +53,4 @@ WARNING: StructureDefinition/no-basis-virtual-service: StructureDefinition.snaps
 WARNING: StructureDefinition/no-basis-virtual-service: StructureDefinition.differential.element[0].short: value should not start or finish with whitespace 'Virtual Service '
 WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-virtual-service'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\ValueSet-no-basis-virtual-service-type-vs.json ==
-ERROR: ValueSet/no-basis-virtual-service-type-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not found. HL7 Published value sets SHALL conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'no-basis-virtual-service-type-vs'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.4.642.4.1809

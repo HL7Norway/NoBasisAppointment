@@ -10,7 +10,8 @@
   "name" : "NoBasisVirtualServiceTypeVS",
   "title" : "No Basis VirtualServiceType Value Set",
   "status" : "active",
-  "date" : "2023-10-05T18:59:01+02:00",
+  "experimental" : false,
+  "date" : "2023-10-05T22:34:13+02:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -19,7 +20,7 @@
       "value" : "http://example.org/example-publisher"
     }]
   }],
-  "description" : "Example codes for possible virtual service connection types.",
+  "description" : "Example codes for virtual service connection types. Any other codes or codesystem should be added to this valueSet",
   "compose" : {
     "include" : [{
       "system" : "urn:oid:2.16.840.1.113883.4.642.4.1809"

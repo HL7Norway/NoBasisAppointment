@@ -122,7 +122,7 @@ Description: "The appointment is a group session."
 * value[x] only boolean
 * value[x] ^short = "The appointment is a group session."
 
-/*
+
 Extension: NoBasisVirtualService
 Id: no-basis-virtual-service
 Title: "no-basis-Virtual-Service"
@@ -166,10 +166,13 @@ Title: "No Basis VirtualServiceType Value Set"
 Description: "Example codes for virtual service connection types. Any other codes or codesystem should be added to this valueSet"
 * ^status = #active
 * ^version = "0.1.0"
+* ^publisher = "HL7 Norway"
+* ^url = "http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type-vs"
+* ^experimental = false
 * include codes from system urn:oid:2.16.840.1.113883.4.642.4.1809 
 * include codes from system http://hl7.org/fhir/contact-point-system 
 
-*/
+/*
 
 Extension: NoBasisVirtualService
 Id: no-basis-virtual-service
@@ -213,8 +216,13 @@ Title: "No Basis VirtualServiceType Value Set"
 Description: "Example codes for possible virtual service connection types."
 * ^status = #active
 * ^version = "0.1.0"
+* ^publisher = "HL7 Norway"
+* ^description = "Valueset that is for example use for a appointment virtual service"
+* ^url = "http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type-vs"
 * include codes from system urn:oid:2.16.840.1.113883.4.642.4.1809 
 * include codes from system http://hl7.org/fhir/contact-point-system
+
+*/
 
 Alias: $appointment-type = http://terminology.hl7.org/CodeSystem/v2-0276
 
