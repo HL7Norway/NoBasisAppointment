@@ -93,7 +93,6 @@ Description: "Base profile for Norwegian Appointment information. Defined by HL7
 * appointmentType.coding ^definition = "Recomended code systems for no-basis-Appointment. The recomended code systems might not be suficient for defining appointment type and in an implemented profile - some other coding might be needed."
 
 
-
 Extension: NoBasisPartOf
 Id: no-basis-partof
 Title: "no-basis-partof"
@@ -123,8 +122,7 @@ Description: "The appointment is a group session."
 * value[x] only boolean
 * value[x] ^short = "The appointment is a group session."
 
-
-
+/*
 Extension: NoBasisVirtualService
 Id: no-basis-virtual-service
 Title: "no-basis-Virtual-Service"
@@ -170,6 +168,53 @@ Description: "Example codes for virtual service connection types. Any other code
 * ^version = "0.1.0"
 * include codes from system urn:oid:2.16.840.1.113883.4.642.4.1809 
 * include codes from system http://hl7.org/fhir/contact-point-system 
+
+*/
+
+Extension: NoBasisVirtualService
+Id: no-basis-virtual-service
+Title: "no-basis-Virtual-Service"
+Description: "The VirtualService is based on VirtualServiceDetail structure from R5 and defines details of a virtual communication capability, such as a web conference call."
+* ^version = "0.0.1"
+* ^status = #active
+* . ^short = "Virtual Service "
+* . ^definition = "The VirtualService structure defines details of a virtual communication capability, such as a web conference call."
+* ^context.type = #element
+* ^context.expression = "Appointment"
+* extension contains
+    channelType 0..1 and
+    virtualAddress 0..1 and
+    additionalInfo 0..* and
+    maxParticipants 0..1 and
+    sessionKey 0..1
+* extension[channelType] ^short = "Channel Type"
+* extension[channelType] ^definition = "The type of virtual service to connect to."
+* extension[channelType].value[x] only Coding
+* extension[channelType].value[x] from no-basis-virtual-service-type-vs (example)
+* extension[channelType].value[x] ^short = "Valuset for virtual servie."
+* extension[channelType].value[x] ^definition = "The valuesett inherits all codes from http://hl7.org/fhir/contact-point-system and http://hl7.org/fhir/virtual-service-type. Virtual-service-type is from R5. "
+* extension[virtualAddress] ^short = "Contact address/number"
+* extension[virtualAddress] ^definition = "Address or number needs to be used for a user to connect to the virtual service to join. "
+* extension[virtualAddress].value[x] only string or url or ContactPoint
+* extension[additionalInfo] ^short = "Address to see alternative connection details"
+* extension[additionalInfo] ^definition = "Address to see alternative connection details. "
+* extension[additionalInfo].value[x] only url
+* extension[maxParticipants] ^short = "Maximum number of participants supported by the virtual service."
+* extension[maxParticipants] ^definition = "Maximum number of participants supported by the virtual service. "
+* extension[maxParticipants].value[x] only positiveInt
+* extension[sessionKey] ^short = "Session Key required by the virtual service"
+* extension[sessionKey] ^definition = "Session Key required by the virtual service. "
+* extension[sessionKey].value[x] only string
+
+
+ValueSet: NoBasisVirtualServiceTypeVS
+Id: no-basis-virtual-service-type-vs
+Title: "No Basis VirtualServiceType Value Set"
+Description: "Example codes for possible virtual service connection types."
+* ^status = #active
+* ^version = "0.1.0"
+* include codes from system urn:oid:2.16.840.1.113883.4.642.4.1809 
+* include codes from system http://hl7.org/fhir/contact-point-system
 
 Alias: $appointment-type = http://terminology.hl7.org/CodeSystem/v2-0276
 

@@ -10,7 +10,7 @@
   <name value="NoBasisVirtualServiceTypeVS"/>
   <title value="No Basis VirtualServiceType Value Set"/>
   <status value="active"/>
-  <date value="2023-10-05T18:44:58+02:00"/>
+  <date value="2023-10-05T18:59:01+02:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -19,7 +19,7 @@
       <value value="http://example.org/example-publisher"/>
     </telecom>
   </contact>
-  <description value="Example codes for virtual service connection types. Any other codes or codesystem should be added to this valueSet"/>
+  <description value="Example codes for possible virtual service connection types."/>
   <compose>
     <include>
       <system value="urn:oid:2.16.840.1.113883.4.642.4.1809"/>

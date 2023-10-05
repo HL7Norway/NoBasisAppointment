@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Hl7NorgeNoBasisAppointmentNoBasisAppointmentResponse"] ; # 
   fhir:title [ fhir:v "Proposal for No Basis Appointment and NO Basis AppointmentResponse"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-05T18:44:58+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-10-05T18:59:01+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Example Publisher"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Example Publisher" ] ;
@@ -535,7 +535,7 @@
          fhir:reference [ fhir:v "ValueSet/no-basis-virtual-service-type-vs" ]
        ] ;
        fhir:name [ fhir:v "No Basis VirtualServiceType Value Set" ] ;
-       fhir:description [ fhir:v "Example codes for virtual service connection types. Any other codes or codesystem should be added to this valueSet" ] ;
+       fhir:description [ fhir:v "Example codes for possible virtual service connection types." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
