@@ -17,13 +17,13 @@
   fhir:name [ fhir:v "NoBasisAppointmentResponse"] ; # 
   fhir:title [ fhir:v "no-basis-AppointmentResponse"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-10-05T22:34:13+02:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "Example Publisher"] ; # 
+  fhir:date [ fhir:v "2023-10-05T23:14:02+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Hl7 Norge"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "Example Publisher" ] ;
+     fhir:name [ fhir:v "Hl7 Norge" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+       fhir:value [ fhir:v "http://Hl7.no/Hl7Norge-publisher" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "Basisprofil for Norwegian AppointmentResponse information. Defined by HL7 Norway. Should be used as a basis for further profiling in use-cases where specific appointment respons information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to each use-case."] ; # 

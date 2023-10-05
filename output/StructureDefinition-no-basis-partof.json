@@ -10,13 +10,13 @@
   "name" : "NoBasisPartOf",
   "title" : "no-basis-partof",
   "status" : "active",
-  "date" : "2023-10-05T22:34:13+02:00",
-  "publisher" : "Example Publisher",
+  "date" : "2023-10-05T23:14:02+02:00",
+  "publisher" : "Hl7 Norge",
   "contact" : [{
-    "name" : "Example Publisher",
+    "name" : "Hl7 Norge",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://example.org/example-publisher"
+      "value" : "http://Hl7.no/Hl7Norge-publisher"
     }]
   }],
   "description" : "This basis extension mirrors the Encounter.partOF-attribute. The partOf-attribute enables booking of a set of related appointments with a set of sub-appointments being linked to the main appointment in the same way as encounters are being linked. A larger appointment of which this particular appointment is a component or step.",

@@ -25,7 +25,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "no-basis-Appointment","Appointment.extension:virtualService","Appointment.extension","virtualService","","",0,*,"Y","","","Extension {[CanonicalType[http://hl7.no/fhir/StructureDefinition/no-basis-virtual-service]]} {[]}
-","Virtual Service ","The VirtualService structure defines details of a virtual communication capability, such as a web conference call.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Virtual Service","The VirtualService structure defines details of a virtual communication capability, such as a web conference call.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "no-basis-Appointment","Appointment.extension:group","Appointment.extension","group","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.no/fhir/StructureDefinition/no-basis-group]]} {[]}
@@ -279,7 +279,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Patient can come on short notice.","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "no-basis-virtual-service","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Virtual Service ","The VirtualService structure defines details of a virtual communication capability, such as a web conference call.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","Virtual Service","The VirtualService structure defines details of a virtual communication capability, such as a web conference call.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "no-basis-virtual-service","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}

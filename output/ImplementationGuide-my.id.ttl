@@ -15,18 +15,18 @@
   fhir:url [ fhir:v "http://hl7.no/fhir/ImplementationGuide/my.id"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "2.2.0-alpha"] ; # 
   fhir:name [ fhir:v "Hl7NorgeNoBasisAppointmentNoBasisAppointmentResponse"] ; # 
-  fhir:title [ fhir:v "Proposal for No Basis Appointment and NO Basis AppointmentResponse"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-05T22:34:13+02:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "Example Publisher"] ; # 
+  fhir:title [ fhir:v "No Basis Appointment and NO Basis AppointmentResponse"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-10-05T23:14:02+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Hl7 Norge"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "Example Publisher" ] ;
+     fhir:name [ fhir:v "Hl7 Norge" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+       fhir:value [ fhir:v "http://Hl7.no/Hl7Norge-publisher" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Proposal for new no basis profiles for appointment and appointmentResponse based on result from workshop."] ; # 
+  fhir:description [ fhir:v "New no basis profiles for appointment and appointmentResponse based on result from workshop."] ; # 
   fhir:packageId [ fhir:v "my.id"] ; # 
   fhir:license [ fhir:v "CC0-1.0"] ; # 
   fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 

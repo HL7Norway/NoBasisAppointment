@@ -10,13 +10,13 @@
   "name" : "NoBasisAppointment",
   "title" : "no-basis-Appointment",
   "status" : "active",
-  "date" : "2023-10-05T22:34:13+02:00",
-  "publisher" : "Example Publisher",
+  "date" : "2023-10-05T23:14:02+02:00",
+  "publisher" : "Hl7 Norge",
   "contact" : [{
-    "name" : "Example Publisher",
+    "name" : "Hl7 Norge",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://example.org/example-publisher"
+      "value" : "http://Hl7.no/Hl7Norge-publisher"
     }]
   }],
   "description" : "Base profile for Norwegian Appointment information. Defined by HL7 Norway. This profile identifies a set of minimum expectations for an Appointment resource when creating, searching and retrieving compositions by defining which coding system(s) can be present when using this profile. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.",
@@ -382,7 +382,7 @@
       "id" : "Appointment.extension:virtualService",
       "path" : "Appointment.extension",
       "sliceName" : "virtualService",
-      "short" : "Virtual Service ",
+      "short" : "Virtual Service",
       "definition" : "The VirtualService structure defines details of a virtual communication capability, such as a web conference call.",
       "min" : 0,
       "max" : "*",

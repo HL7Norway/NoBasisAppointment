@@ -11,13 +11,13 @@
   <title value="No Basis VirtualServiceType Value Set"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2023-10-05T22:34:13+02:00"/>
-  <publisher value="Example Publisher"/>
+  <date value="2023-10-05T23:14:02+02:00"/>
+  <publisher value="Hl7 Norge"/>
   <contact>
-    <name value="Example Publisher"/>
+    <name value="Hl7 Norge"/>
     <telecom>
       <system value="url"/>
-      <value value="http://example.org/example-publisher"/>
+      <value value="http://Hl7.no/Hl7Norge-publisher"/>
     </telecom>
   </contact>
   <description value="Example codes for virtual service connection types. Any other codes or codesystem should be added to this valueSet"/>

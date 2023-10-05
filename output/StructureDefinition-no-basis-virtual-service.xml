@@ -10,13 +10,13 @@
   <name value="NoBasisVirtualService"/>
   <title value="no-basis-Virtual-Service"/>
   <status value="active"/>
-  <date value="2023-10-05T22:34:13+02:00"/>
-  <publisher value="Example Publisher"/>
+  <date value="2023-10-05T23:14:02+02:00"/>
+  <publisher value="Hl7 Norge"/>
   <contact>
-    <name value="Example Publisher"/>
+    <name value="Hl7 Norge"/>
     <telecom>
       <system value="url"/>
-      <value value="http://example.org/example-publisher"/>
+      <value value="http://Hl7.no/Hl7Norge-publisher"/>
     </telecom>
   </contact>
   <description value="The VirtualService is based on VirtualServiceDetail structure from R5 and defines details of a virtual communication capability, such as a web conference call."/>
@@ -38,7 +38,7 @@
   <snapshot>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Virtual Service "/>
+      <short value="Virtual Service"/>
       <definition value="The VirtualService structure defines details of a virtual communication capability, such as a web conference call."/>
       <min value="0"/>
       <max value="*"/>
@@ -1136,7 +1136,7 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Virtual Service "/>
+      <short value="Virtual Service"/>
       <definition value="The VirtualService structure defines details of a virtual communication capability, such as a web conference call."/>
     </element>
     <element id="Extension.extension:channelType">

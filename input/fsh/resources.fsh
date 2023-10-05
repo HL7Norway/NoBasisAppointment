@@ -129,7 +129,7 @@ Title: "no-basis-Virtual-Service"
 Description: "The VirtualService is based on VirtualServiceDetail structure from R5 and defines details of a virtual communication capability, such as a web conference call."
 * ^version = "0.0.1"
 * ^status = #active
-* . ^short = "Virtual Service "
+* . ^short = "Virtual Service"
 * . ^definition = "The VirtualService structure defines details of a virtual communication capability, such as a web conference call."
 * ^context.type = #element
 * ^context.expression = "Appointment"

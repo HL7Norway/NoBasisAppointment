@@ -10,13 +10,13 @@
   "name" : "NoBasisVirtualService",
   "title" : "no-basis-Virtual-Service",
   "status" : "active",
-  "date" : "2023-10-05T22:34:13+02:00",
-  "publisher" : "Example Publisher",
+  "date" : "2023-10-05T23:14:02+02:00",
+  "publisher" : "Hl7 Norge",
   "contact" : [{
-    "name" : "Example Publisher",
+    "name" : "Hl7 Norge",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://example.org/example-publisher"
+      "value" : "http://Hl7.no/Hl7Norge-publisher"
     }]
   }],
   "description" : "The VirtualService is based on VirtualServiceDetail structure from R5 and defines details of a virtual communication capability, such as a web conference call.",
@@ -39,7 +39,7 @@
     "element" : [{
       "id" : "Extension",
       "path" : "Extension",
-      "short" : "Virtual Service ",
+      "short" : "Virtual Service",
       "definition" : "The VirtualService structure defines details of a virtual communication capability, such as a web conference call.",
       "min" : 0,
       "max" : "*",
@@ -1179,7 +1179,7 @@
     "element" : [{
       "id" : "Extension",
       "path" : "Extension",
-      "short" : "Virtual Service ",
+      "short" : "Virtual Service",
       "definition" : "The VirtualService structure defines details of a virtual communication capability, such as a web conference call."
     },
     {

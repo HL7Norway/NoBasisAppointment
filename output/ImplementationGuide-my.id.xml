@@ -8,18 +8,18 @@
   <url value="http://hl7.no/fhir/ImplementationGuide/my.id"/>
   <version value="2.2.0-alpha"/>
   <name value="Hl7NorgeNoBasisAppointmentNoBasisAppointmentResponse"/>
-  <title value="Proposal for No Basis Appointment and NO Basis AppointmentResponse"/>
-  <status value="draft"/>
-  <date value="2023-10-05T22:34:13+02:00"/>
-  <publisher value="Example Publisher"/>
+  <title value="No Basis Appointment and NO Basis AppointmentResponse"/>
+  <status value="active"/>
+  <date value="2023-10-05T23:14:02+02:00"/>
+  <publisher value="Hl7 Norge"/>
   <contact>
-    <name value="Example Publisher"/>
+    <name value="Hl7 Norge"/>
     <telecom>
       <system value="url"/>
-      <value value="http://example.org/example-publisher"/>
+      <value value="http://Hl7.no/Hl7Norge-publisher"/>
     </telecom>
   </contact>
-  <description value="Proposal for new no basis profiles for appointment and appointmentResponse based on result from workshop."/>
+  <description value="New no basis profiles for appointment and appointmentResponse based on result from workshop."/>
   <packageId value="my.id"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>

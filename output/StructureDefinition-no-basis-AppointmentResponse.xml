@@ -10,13 +10,13 @@
   <name value="NoBasisAppointmentResponse"/>
   <title value="no-basis-AppointmentResponse"/>
   <status value="active"/>
-  <date value="2023-10-05T22:34:13+02:00"/>
-  <publisher value="Example Publisher"/>
+  <date value="2023-10-05T23:14:02+02:00"/>
+  <publisher value="Hl7 Norge"/>
   <contact>
-    <name value="Example Publisher"/>
+    <name value="Hl7 Norge"/>
     <telecom>
       <system value="url"/>
-      <value value="http://example.org/example-publisher"/>
+      <value value="http://Hl7.no/Hl7Norge-publisher"/>
     </telecom>
   </contact>
   <description value="Basisprofil for Norwegian AppointmentResponse information. Defined by HL7 Norway. Should be used as a basis for further profiling in use-cases where specific appointment respons information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to each use-case."/>
